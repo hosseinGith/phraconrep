@@ -161,6 +161,9 @@
   .relative {
     position: relative;
   }
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
   }
@@ -172,6 +175,12 @@
   }
   .resize {
     resize: both;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .border {
     border-style: var(--tw-border-style);
