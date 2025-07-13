@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -6,6 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --spacing: 0.25rem;
+    --aspect-video: 16 / 9;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -174,17 +177,116 @@
       max-width: 96rem;
     }
   }
-  .bg-\[var\(--mainColor\)\] {
-    background-color: var(--mainColor);
+  .mr-4 {
+    margin-right: calc(var(--spacing) * 4);
+  }
+  .mr-8 {
+    margin-right: calc(var(--spacing) * 8);
+  }
+  .mr-12 {
+    margin-right: calc(var(--spacing) * 12);
+  }
+  .flex {
+    display: flex;
+  }
+  .hidden {
+    display: none;
+  }
+  .table {
+    display: table;
+  }
+  .aspect-video {
+    aspect-ratio: var(--aspect-video);
+  }
+  .w-\[150px\] {
+    width: 150px;
+  }
+  .w-\[200px\] {
+    width: 200px;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .object-contain {
+    object-fit: contain;
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
+  .text-\[var\(--lowOpacityText\)\] {
+    color: var(--lowOpacityText);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .\*\:text-\[var\(--lowOpacityText\)\] {
+    :is(& > *) {
+      color: var(--lowOpacityText);
+    }
+  }
+  .sm\:flex {
+    @media (width >= 40rem) {
+      display: flex;
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
   }
 }
 :root {
   --mainColor: #34c0b8;
+  --textMainColor: #fff;
+  --lowOpacityText: gray;
 }
 @layer base {
   .flex-between-center {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .button {
+    border-radius: 0.25rem;
+    background-color: var(--mainColor);
+    padding-inline: calc(var(--spacing) * 4);
+    padding-block: calc(var(--spacing) * 2);
+    color: var(--textMainColor);
+  }
+  .container {
+    margin-inline: auto;
+    padding-inline: calc(var(--spacing) * 4);
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-outline-style: solid;
+    }
   }
 }
