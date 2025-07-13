@@ -8,12 +8,16 @@
 }
 
 @layer base {
+    button {
+        @apply cursor-pointer
+    }
+
     .flex-between-center {
         @apply flex justify-between items-center
     }
 
     .button {
-        @apply px-4 py-2 bg-[var(--mainColor)] text-[var(--textMainColor)] rounded
+        @apply px-4 py-2 bg-[var(--mainColor)] text-[var(--textMainColor)] rounded hover:opacity-85 transition-opacity
     }
 
     .container {
