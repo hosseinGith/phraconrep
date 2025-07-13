@@ -1,1 +1,0 @@
-let num1: number = 7
