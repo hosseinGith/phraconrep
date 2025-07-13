@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+:root {
+    --mainColor: #34c0b8;
+    --textMainColor: #fff;
+    --textColor: #000;
+    --lowOpacityText: gray;
+}
+
+@layer base {
+    button {
+        @apply cursor-pointer
+    }
+
+    .flex-between-center {
+        @apply flex justify-between items-center
+    }
+
+    .button {
+        @apply px-4 py-2 bg-[var(--mainColor)] text-[var(--textMainColor)] rounded hover:opacity-85 transition-opacity
+    }
+
+    .container {
+        @apply mx-auto px-4
+    }
+}
