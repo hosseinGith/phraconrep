@@ -9,6 +9,8 @@
       "Courier New", monospace;
     --spacing: 0.25rem;
     --aspect-video: 16 / 9;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -177,15 +179,6 @@
       max-width: 96rem;
     }
   }
-  .mr-4 {
-    margin-right: calc(var(--spacing) * 4);
-  }
-  .mr-8 {
-    margin-right: calc(var(--spacing) * 8);
-  }
-  .mr-12 {
-    margin-right: calc(var(--spacing) * 12);
-  }
   .flex {
     display: flex;
   }
@@ -200,9 +193,6 @@
   }
   .w-\[150px\] {
     width: 150px;
-  }
-  .w-\[200px\] {
-    width: 200px;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -233,9 +223,37 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
-  .\*\:text-\[var\(--lowOpacityText\)\] {
+  .transition-\[color\] {
+    transition-property: color;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .\*\:transition-\[color\] {
     :is(& > *) {
-      color: var(--lowOpacityText);
+      transition-property: color;
+      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+      transition-duration: var(--tw-duration, var(--default-transition-duration));
+    }
+  }
+  .\*\:transition-colors {
+    :is(& > *) {
+      transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+      transition-duration: var(--tw-duration, var(--default-transition-duration));
+    }
+  }
+  .\*\:hover\:text-\[var\(--textColor\)\] {
+    :is(& > *) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--textColor);
+        }
+      }
     }
   }
   .sm\:flex {
@@ -243,15 +261,11 @@
       display: flex;
     }
   }
-  .md\:flex {
-    @media (width >= 48rem) {
-      display: flex;
-    }
-  }
 }
 :root {
   --mainColor: #34c0b8;
   --textMainColor: #fff;
+  --textColor: #000;
   --lowOpacityText: gray;
 }
 @layer base {

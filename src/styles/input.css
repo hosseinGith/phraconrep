@@ -3,6 +3,7 @@
 :root {
     --mainColor: #34c0b8;
     --textMainColor: #fff;
+    --textColor: #000;
     --lowOpacityText: gray;
 }
 
@@ -16,6 +17,6 @@
     }
 
     .container {
-        @apply mx-auto px-4 
+        @apply mx-auto px-4
     }
 }
