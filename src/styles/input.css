@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root {
+    --mainColor: #34c0b8;
+}
+
 @layer base {
     .flex-between-center {
         @apply flex justify-between items-center
