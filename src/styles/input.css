@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
 :root {
-    --mainColor: #34c0b8;
-    --textMainColor: #fff;
-    --textColor: #000;
-    --lowOpacityText: gray;
+  --mainColor: #34c0b8;
+  --textMainColor: #fff;
+  --textColor: #000;
+  --lowOpacityText: rgb(114, 114, 114);
 }
 
 @layer base {
-    button {
-        @apply cursor-pointer
-    }
+  body {
+    background: rgb(245, 245, 245);
+  }
 
+  button {
+    @apply cursor-pointer;
+  }
+
+  ul li {
+    @apply hover:text-black transition-colors;
+  }
+}
+
+@layer components {
     .flex-between-center {
-        @apply flex justify-between items-center
+        @apply flex justify-between items-center;
     }
-
     .button {
-        @apply px-4 py-2 bg-[var(--mainColor)] text-[var(--textMainColor)] rounded hover:opacity-85 transition-opacity
+        @apply px-4 py-2 border hover:bg-black hover:text-white rounded hover:opacity-85 transition-opacity;
     }
-
     .container {
-        @apply mx-auto px-4
+        @apply mx-auto px-4;
+    }
+    .nav__link svg {
+        @apply inline w-5 h-5 transform transition-transform duration-300 group-hover:rotate-180;
     }
 }

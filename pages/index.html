@@ -3,41 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/styles/main.css" />
-    <link rel="stylesheet" href="/src/styles/output.css" />
+    <link rel="stylesheet" href="../src/styles/output.css" />
     <title>phraconrep</title>
   </head>
   <body>
-    <header>
+    <svg class="hidden">
+        <symbol id="icon-chevron-down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </symbol>
+    </svg>
+    <header class="shadow bg-white">
       <section>
-        <div class="container py-8">
+        <div class="container py-6">
           <nav class="flex-between-center">
             <div class="flex flex-between-center">
-              <a href="/">
-                <img
-                  src="/src/images/logo-design.png"
-                  class="aspect-video object-contain w-[150px]"
-                  alt="LOGO"
-                />
+              <a href="/" class="pr-11 nav__link">
+                logo
               </a>
-              <ul
-                class="sm:flex gap-4 *:hover:text-[var(--textColor)] *:transition-colors text-[var(--lowOpacityText)] hidden"
-              >
-                <li>
-                  <a href="#">ABOUT</a>
+              <ul class="sm:flex gap-4 text-[var(--lowOpacityText)] hidden" >
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link group">
+                    About PhraConRep
+                    <svg class="inline w-5 h-5 transform transition-transform duration-300 group-hover:rotate-180">
+                        <use href="#icon-chevron-down"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link group">Team and Structure
+                    <svg class="inline w-5 h-5">
+                        <use href="#icon-chevron-down"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link group"> Grants 
+                    <svg class="inline w-5 h-5">
+                        <use href="#icon-chevron-down"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link group"> News & Events 
+                    <svg class="inline w-5 h-5">
+                        <use href="#icon-chevron-down"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
-                  <a href="#">BLOG</a>
-                </li>
-                <li>
-                  <a href="#">CAREERS</a>
-                </li>
-                <li>
-                  <a href="#">SUPPORT</a>
+                  <a href="#" class="nav__link group"> Contact
+                    <svg class="inline w-5 h-5">
+                        <use href="#icon-chevron-down"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>
-            <a href="#" class="button">BUY NOW</a>
+            <a href="#" class="button"> Contact </a>
           </nav>
         </div>
       </section>
