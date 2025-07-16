@@ -6,14 +6,20 @@
     <link rel="stylesheet" href="../src/styles/output.css" />
     <title>phraconrep</title>
   </head>
-  <body>
+  <body class="relative">
     <svg class="hidden">
         <symbol id="icon-chevron-down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
         </symbol>
     </svg>
-    <header>
-      <section class="bg-white shadow">
+
+    <header class="relative">
+
+      <div class="absolute top-0 right-0 z-[-1]">
+        <img src="../public/images/Decore.svg" alt="">
+      </div>
+
+      <section class="bg-white shadow z-50">
         <div class="container py-6">
           <nav class="flex justify-between items-center">
             <div class="flex justify-between items-center">
@@ -147,12 +153,14 @@
           </nav>
         </div>
       </section>
-      <section class="hero container py-11">
+      <section class="hero container py-12">
         <div class="flex-row-center w-[44%] mx-auto">
           <h1 class="font-semibold text-5xl text-center">Unveiling the World of Phraseme Constructions</h1>
         </div>
       </section>
     </header>
+
+
 
     <main class="container">
       <section class="grid grid-cols-12 justify-items-center gap-3">
@@ -161,17 +169,18 @@
           <img src="../public/images/Linguistics.jpg" alt="" class="object-cover h-full">
         </div>
 
-        <div class="col-span-5 shadow p-4 bg-white">
+        <div class="left-0 col-span-5 shadow p-11 bg-white">
           <div>
             <span class="text-[#BCB3B3] text-3xl">Welcome to PhraConRep</span>
             <p class="text-[#418181] text-4xl">A Journey into the Heart of Idiomatic Word Combinations in Middle and Eastern European Languages</p>
           </div>
-          <div class="py-11">
+          <div class="pt-11">
             <p>
               Delve into the fascinating world of Phraseme Constructions! PhraConRep is an innovative COST Action project focused on unearthing and understanding Phraseme Constructions (PhraCons) — unique idiomatic word combinations that are integral to  language comprehension and usage.
             </p>
           </div>
         </div>
+
       </section>
     </main>
     
