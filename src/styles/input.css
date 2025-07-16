@@ -7,21 +7,16 @@
   --lowOpacityText: rgb(114, 114, 114);
 }
 
-@layer base {
-  body {
-    background: rgb(245, 245, 245);
-  }
+    body {
+        background: rgb(245, 245, 245);
+    }
+    button {
+        @apply cursor-pointer;
+    }
+    ul li a{
+        @apply hover:text-black transition-colors;
+    }
 
-  button {
-    @apply cursor-pointer;
-  }
-
-  ul li {
-    @apply hover:text-black transition-colors;
-  }
-}
-
-@layer components {
     .flex-between-center {
         @apply flex justify-between items-center;
     }
@@ -31,7 +26,14 @@
     .container {
         @apply mx-auto px-4;
     }
+    .nav__item {
+        @apply relative
+    }
     .nav__link svg {
         @apply inline w-5 h-5 transform transition-transform duration-300 group-hover:rotate-180;
     }
-}
+
+    .nav__item--has-submenu:hover .nav__submenu{
+        
+    }
+

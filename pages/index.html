@@ -24,14 +24,28 @@
                 <li class="nav__item">
                   <a href="#" class="nav__link">Home</a>
                 </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link group">
-                    About PhraConRep
-                    <svg class="inline w-5 h-5 transform transition-transform duration-300 group-hover:rotate-180">
+                <li class="nav__item nav__item--has-submenu relative">
+                    <a href="#" class="nav__link group">
+                        About PhraConRep
+                        <svg class="nav__icon inline w-5 h-5 transform transition-transform duration-300 group-hover:rotate-180">
                         <use href="#icon-chevron-down"></use>
-                    </svg>
-                  </a>
+                        </svg>
+                    </a>
+                    <div class="nav__submenu shadow border border-gray-200 p-2.5 rounded bg-white absolute top-7 left-0 ">
+                        <ul class="nav__submenu-list">
+                        <li class="nav__submenu-item">
+                            <a href="" class="nav__submenu-link">About Us</a>
+                        </li>
+                        <li class="nav__submenu-item">
+                            <a href="" class="nav__submenu-link">Deliverables</a>
+                        </li>
+                        <li class="nav__submenu-item">
+                            <a href="" class="nav__submenu-link">Memorandum of Understanding (MoU)</a>
+                        </li>
+                        </ul>
+                    </div>
                 </li>
+
                 <li class="nav__item">
                   <a href="#" class="nav__link group">Team and Structure
                     <svg class="inline w-5 h-5">

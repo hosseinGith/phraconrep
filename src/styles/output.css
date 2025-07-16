@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -162,6 +163,18 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .top-7 {
+    top: calc(var(--spacing) * 7);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -201,8 +214,21 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-gray-200 {
+    border-color: var(--color-gray-200);
+  }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .p-2\.5 {
+    padding: calc(var(--spacing) * 2.5);
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
@@ -245,73 +271,72 @@
   --textColor: #000;
   --lowOpacityText: rgb(114, 114, 114);
 }
-@layer base {
-  body {
-    background: rgb(245, 245, 245);
-  }
-  button {
-    cursor: pointer;
-  }
-  ul li {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-black);
-      }
+body {
+  background: rgb(245, 245, 245);
+}
+button {
+  cursor: pointer;
+}
+ul li a {
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  &:hover {
+    @media (hover: hover) {
+      color: var(--color-black);
     }
   }
 }
-@layer components {
-  .flex-between-center {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .button {
-    border-radius: 0.25rem;
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-    padding-inline: calc(var(--spacing) * 4);
-    padding-block: calc(var(--spacing) * 2);
-    transition-property: opacity;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-black);
-      }
-    }
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-white);
-      }
-    }
-    &:hover {
-      @media (hover: hover) {
-        opacity: 85%;
-      }
+.flex-between-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button {
+  border-radius: 0.25rem;
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  padding-inline: calc(var(--spacing) * 4);
+  padding-block: calc(var(--spacing) * 2);
+  transition-property: opacity;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-black);
     }
   }
-  .container {
-    margin-inline: auto;
-    padding-inline: calc(var(--spacing) * 4);
+  &:hover {
+    @media (hover: hover) {
+      color: var(--color-white);
+    }
   }
-  .nav__link svg {
-    display: inline;
-    height: calc(var(--spacing) * 5);
-    width: calc(var(--spacing) * 5);
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-    transition-property: transform, translate, scale, rotate;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-    --tw-duration: 300ms;
-    transition-duration: 300ms;
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        rotate: 180deg;
-      }
+  &:hover {
+    @media (hover: hover) {
+      opacity: 85%;
+    }
+  }
+}
+.container {
+  margin-inline: auto;
+  padding-inline: calc(var(--spacing) * 4);
+}
+.nav__item {
+  position: relative;
+}
+.nav__link svg {
+  display: inline;
+  height: calc(var(--spacing) * 5);
+  width: calc(var(--spacing) * 5);
+  transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  transition-property: transform, translate, scale, rotate;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      rotate: 180deg;
     }
   }
 }
@@ -334,6 +359,11 @@
 @property --tw-skew-y {
   syntax: "*";
   inherits: false;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-shadow {
   syntax: "*";
@@ -404,11 +434,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -417,6 +442,7 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
+      --tw-border-style: solid;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
@@ -432,7 +458,6 @@
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
       --tw-duration: initial;
-      --tw-border-style: solid;
     }
   }
 }
