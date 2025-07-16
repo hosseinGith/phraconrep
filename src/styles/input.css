@@ -4,7 +4,7 @@
   --mainColor: #34c0b8;
   --textMainColor: #fff;
   --textColor: #000;
-  --lowOpacityText: rgb(114, 114, 114);
+  --lowOpacityText: rgb(74, 74, 74);
 }
 
     body {
@@ -16,9 +16,12 @@
     ul li a{
         @apply hover:text-black transition-colors;
     }
-
-    .flex-between-center {
-        @apply flex justify-between items-center;
+    /* Helper classes */
+    .flex-row-center{
+        @apply flex justify-center items-center;
+    }
+    .flex-col-center{
+        @apply flex flex-col justify-center items-center;
     }
     .button {
         @apply px-4 py-2 border hover:bg-black hover:text-white rounded hover:opacity-85 transition-opacity;
@@ -32,8 +35,18 @@
     .nav__link svg {
         @apply inline w-5 h-5 transform transition-transform duration-300 group-hover:rotate-180;
     }
+    /* My styles */
+    
 
+
+    .nav__submenu{
+        visibility: hidden;
+        opacity: 0;
+        transition: all 150ms ease-in;
+        transition-duration: 150ms;
+    }
     .nav__item--has-submenu:hover .nav__submenu{
-        
+        visibility: visible;
+        opacity: 1;
     }
 
