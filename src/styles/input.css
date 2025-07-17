@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+<<<<<<< HEAD
 @layer base {
     .flex-between-center {
         @apply flex justify-between items-center
@@ -82,3 +83,55 @@ ul li a {
     font-size: 20px !important;
     font-weight: bold;
 }
+=======
+:root {
+  --mainColor: #34c0b8;
+  --textMainColor: #fff;
+  --textColor: #000;
+  --lowOpacityText: rgb(74, 74, 74);
+}
+
+    body {
+        background: rgb(245, 245, 245);
+    }
+    button {
+        @apply cursor-pointer;
+    }
+    ul li a{
+        @apply hover:text-black transition-colors;
+    }
+    /* Helper classes */
+    .flex-row-center{
+        @apply flex justify-center items-center;
+    }
+    .flex-col-center{
+        @apply flex flex-col justify-center items-center;
+    }
+    .button {
+        @apply px-4 py-2 border hover:bg-black hover:text-white rounded hover:opacity-85 transition-opacity;
+    }
+    .container {
+        @apply mx-auto px-4;
+    }
+    .nav__item {
+        @apply relative
+    }
+    .nav__link svg {
+        @apply inline w-5 h-5 transform transition-transform duration-300 group-hover:rotate-180;
+    }
+    /* My styles */
+    
+
+
+    .nav__submenu{
+        visibility: hidden;
+        opacity: 0;
+        transition: all 150ms ease-in;
+        transition-duration: 150ms;
+    }
+    .nav__item--has-submenu:hover .nav__submenu{
+        visibility: visible;
+        opacity: 1;
+    }
+
+>>>>>>> a463831d322d018e5c81e13d7bbf31e11099b83d
