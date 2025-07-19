@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/styles/output.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <title>phraconrep</title>
   </head>
   <body class="relative">
@@ -19,6 +24,15 @@
         <symbol id="user" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
         </symbol>
+
+        <symbol id="chevron_left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </symbol>
+
+        <symbol id="chevron_right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </symbol>
+
     </svg>
 
     <header class="relative">
@@ -166,70 +180,141 @@
           <h1 class="font-semibold text-5xl text-center">Unveiling the World of Phraseme Constructions</h1>
         </div>
       </section>
+
     </header>
 
-    <main class="container">
-      <section class="grid grid-cols-12  gap-3">
+  <main>
+    <section class="container grid grid-cols-12  gap-3">
 
-        <div class="col-span-5 bg-amber-300 rounded-md overflow-hidden">
-          <img src="../public/images/Linguistics.jpg" alt="" class="object-cover h-full">
+      <div class="col-span-5 bg-amber-300 rounded-md overflow-hidden">
+        <img src="../public/images/Linguistics.jpg" alt="" class="object-cover h-full">
+      </div>
+
+      <div class="left-0 col-span-7 shadow p-11 bg-white">
+        <div>
+          <span class="text-[#BCB3B3] text-3xl">Welcome to PhraConRep</span>
+          <p class="text-[#418181] text-4xl">A Journey into the Heart of Idiomatic Word Combinations in Middle and Eastern European Languages</p>
         </div>
-
-        <div class="left-0 col-span-7 shadow p-11 bg-white">
-          <div>
-            <span class="text-[#BCB3B3] text-3xl">Welcome to PhraConRep</span>
-            <p class="text-[#418181] text-4xl">A Journey into the Heart of Idiomatic Word Combinations in Middle and Eastern European Languages</p>
-          </div>
-          <div class="pt-11">
-            <p>
-              Delve into the fascinating world of Phraseme Constructions! PhraConRep is an innovative COST Action project focused on unearthing and understanding Phraseme Constructions (PhraCons) — unique idiomatic word combinations that are integral to  language comprehension and usage.
-            </p>
-          </div>
+        <div class="pt-11">
+          <p>
+            Delve into the fascinating world of Phraseme Constructions! PhraConRep is an innovative COST Action project focused on unearthing and understanding Phraseme Constructions (PhraCons) — unique idiomatic word combinations that are integral to  language comprehension and usage.
+          </p>
         </div>
+      </div>
 
-      </section>
+    </section>
 
-      <section class="my-11 bg-white p-6 shadow">
+    <section class="container my-11 ">
 
-        <div class="grid grid-cols-12">
+      <div class="container grid grid-cols-12 bg-white shadow p-6">
 
-          <div class="col-span-5 text-justify">
-            <h2 class="text-4xl">Our Mission</h2>
-            <p class="py-4">At PhraConRep, we coordinate comprehensive research on linguistic features, particularly in Middle and Eastern European languages.</p>
-            <p>We aim to to create an infrastructure for comparative research on PhraCons in Central and Eastern European languages and develop a multilingual repository of PhraCons in the Action languages for researchers, language learners, teachers, and professional translators for further research and practical applications.</p>
+        <div class="col-span-5 text-justify">
+          <h2 class="text-4xl">Our Mission</h2>
+          <p class="py-4">At PhraConRep, we coordinate comprehensive research on linguistic features, particularly in Middle and Eastern European languages.</p>
+          <p>We aim to to create an infrastructure for comparative research on PhraCons in Central and Eastern European languages and develop a multilingual repository of PhraCons in the Action languages for researchers, language learners, teachers, and professional translators for further research and practical applications.</p>
+        </div>
+        
+        <div class="col-span-7 flex justify-evenly items-center">
+          <div class="flex-col-center gap-3">
+            <svg class="w-22 h-22">
+              <use href="#compony"></use>
+            </svg>
+            <span class="text-5xl font-semibold">20 +</span>
+            <p class="text-lg font-semibold">Countries Represented</p>
+            <button class="btn"> View network </button>
           </div>
-          
-          <div class="col-span-7 flex justify-evenly items-center">
             <div class="flex-col-center gap-3">
               <svg class="w-22 h-22">
-                <use href="#compony"></use>
+                <use href="#user"></use>
               </svg>
-              <span class="text-5xl font-semibold">20 +</span>
-              <p class="text-lg font-semibold">Countries Represented</p>
-              <button class="btn"> View network </button>
-            </div>
-             <div class="flex-col-center gap-3">
-                <svg class="w-22 h-22">
-                  <use href="#user"></use>
-                </svg>
-                <span class="text-5xl font-semibold">100 +</span>
-                <p class="text-lg font-semibold">Participants</p>
-                <button class="btn"> View Team and Structure </button>
-            </div>
+              <span class="text-5xl font-semibold">100 +</span>
+              <p class="text-lg font-semibold">Participants</p>
+              <button class="btn"> View Team and Structure </button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+      </div>
+
+    </section>
+
+    <section class="container my-11 ">
+      <!-- Swiper -->
+      <div class="swiper mySwiper bg-white shadow">
+        <div class="swiper-wrapper p-6">
+          <div class="swiper-slide">
+            <img src="../public/images/sliderpic.jpg" alt="" class="w-[444px]" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../public/images/sliderpic.jpg" alt="" class="w-[444px]" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../public/images/sliderpic.jpg" alt="" class="w-[444px]" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../public/images/sliderpic.jpg" alt="" class="w-[444px]" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../public/images/sliderpic.jpg" alt="" class="w-[444px]" />
           </div>
         </div>
 
-        <div>
+        <!-- دکمه‌های ناوبری -->
+        <div class="pb-5 flex-row-center gap-x-3">
+          <button class="swiper-custom-button-prev border rounded-full hover:bg-black hover:text-white p-1 transition-colors duration-75">
+            <svg class="w-9 h-9">
+              <use href="#chevron_left"></use>
+            </svg>
+          </button>
+          <button class="swiper-custom-button-next border rounded-full hover:bg-black hover:text-white p-1 transition-colors duration-75">
+            <svg class="w-9 h-9">
+              <use href="#chevron_right"></use>
+            </svg>
+          </button>
         </div>
+      </div>
+    </section>
 
-      </section>
-    </main>
+    <section class="container grid grid-cols-1 md:grid-cols-12 gap-3 items-stretch my-10 min-h-[400px]">
+      <!-- متن -->
+      <div class="col-span-12 md:col-span-5 bg-white shadow p-8 flex flex-col justify-center">
+        <h2 class="text-[#418181] text-3xl md:text-4xl font-semibold leading-snug">
+          Join <span class="text-[#7C7F83]">PhraConRep</span> Community
+        </h2>
+        <p class="text-[#7C7F83] text-lg md:text-xl mt-4 text-justify">
+          Become a part of our growing community of language enthusiasts and experts. Stay updated with our latest research, access our comprehensive PhraCons repository, and contribute to the evolving field of language studies.
+        </p>
+      </div>
+
+      <!-- تصویر -->
+      <div class="col-span-12 md:col-span-7 rounded-md overflow-hidden h-full">
+        <img src="../public/images/shutterstock.jpg" alt="" class="w-full h-full object-cover" />
+      </div>
+    </section>
+
+  </main>
     
-    <footer>
-      <section>
-        <div class="container"></div>
-      </section>
-    </footer>
+  <footer>
+    <section>
+      <div class="container"></div>
+    </section>
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Init Swiper -->
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-custom-button-next',
+          prevEl: '.swiper-custom-button-prev',
+        },
+      });
+    </script>
 
     <script src="/dist/scripts/main.js"></script>
   </body>
