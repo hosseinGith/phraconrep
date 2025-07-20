@@ -27,7 +27,7 @@
         @apply flex flex-col justify-center items-center;
     }
     .button {
-        @apply px-4 py-2 border hover:bg-black hover:text-white rounded hover:opacity-85 transition-opacity;
+        @apply px-4 py-2 border hover:bg-black hover:text-white rounded hover:opacity-85 transition;
     }
     .container {
         @apply mx-auto px-16;
