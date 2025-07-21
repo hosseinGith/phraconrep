@@ -405,18 +405,21 @@
               </form>
             </div>
           </nav>
-          <div id="menuContainer" class="window transition active">
-            <div class="max-w-[300px] w-full h-full menuBg px-4">
+          <div id="menuContainer" class="window transition">
+            <div class="max-w-[300px] h-full w-full menuBg px-4 overflow-auto">
               <div class="flex justify-end">
-                <button class="p-4">
+                <button
+                  class="p-4 hover:opacity-75 transition-opacity"
+                  id="closeMenuContainer"
+                >
                   <svg class="size-8">
                     <use xlink:href="#close-svg"></use>
                   </svg>
                 </button>
               </div>
-              <nav class="h-full">
+              <nav class="pb-8">
                 <ul
-                  class="flex flex-col gap-4 h-full w-full text-[var(--lowOpacityText)]"
+                  class="flex flex-col gap-4 w-full text-[var(--lowOpacityText)] *:hover:opacity-75 *:transition-opacity"
                 >
                   <li class="">
                     <a href="#" class="nav__link">Home</a>
@@ -428,7 +431,9 @@
                         <use href="#icon-chevron-down"></use>
                       </svg>
                     </a>
-                    <div class="w-full rounded h-0 overflow-hidden opacity-0">
+                    <div
+                      class="w-full rounded h-0 overflow-hidden opacity-0 menuDropDown transition-opacity"
+                    >
                       <ul class="nav__submenu-list space-y-2 p-4">
                         <li class="nav__submenu-item">
                           <a href="" class="nav__submenu-link"
@@ -453,13 +458,15 @@
                   </li>
 
                   <li class=" ">
-                    <a href="../pages/network.html" class="nav__link"
+                    <a href="#" class="nav__link"
                       >Network
                       <svg class="inline w-5 h-5">
                         <use href="#icon-chevron-down"></use>
                       </svg>
                     </a>
-                    <div class="w-full rounded h-0 overflow-hidden opacity-0">
+                    <div
+                      class="w-full rounded h-0 overflow-hidden opacity-0 menuDropDown transition-opacity"
+                    >
                       <ul class="nav__submenu-list space-y-2 p-4">
                         <li class="nav__submenu-item">
                           <a href="" class="nav__submenu-link">All</a>
@@ -499,7 +506,9 @@
                         <use href="#icon-chevron-down"></use>
                       </svg>
                     </a>
-                    <div class="w-full rounded h-0 overflow-hidden opacity-0">
+                    <div
+                      class="w-full rounded h-0 overflow-hidden opacity-0 menuDropDown transition-opacity"
+                    >
                       <ul class="nav__submenu-list space-y-2 p-4">
                         <li class="nav__submenu-item">
                           <a href="" class="nav__submenu-link">
@@ -526,7 +535,9 @@
                         <use href="#icon-chevron-down"></use>
                       </svg>
                     </a>
-                    <div class="w-full rounded h-0 overflow-hidden opacity-0">
+                    <div
+                      class="w-full rounded h-0 overflow-hidden opacity-0 menuDropDown transition-opacity"
+                    >
                       <ul class="nav__submenu-list space-y-2 p-4">
                         <li class="nav__submenu-item">
                           <a href="" class="nav__submenu-link">
@@ -563,7 +574,9 @@
                         <use href="#icon-chevron-down"></use>
                       </svg>
                     </a>
-                    <div class="w-full rounded h-0 overflow-hidden opacity-0">
+                    <div
+                      class="w-full rounded h-0 overflow-hidden opacity-0 menuDropDown transition-opacity"
+                    >
                       <ul class="nav__submenu-list space-y-2 p-4">
                         <li class="nav__submenu-item">
                           <a href="" class="nav__submenu-link">
@@ -593,7 +606,9 @@
                         <use href="#icon-chevron-down"></use>
                       </svg>
                     </a>
-                    <div class="w-full rounded h-0 overflow-hidden opacity-0">
+                    <div
+                      class="w-full rounded h-0 overflow-hidden opacity-0 menuDropDown transition-opacity"
+                    >
                       <ul class="nav__submenu-list space-y-2 p-4">
                         <li class="nav__submenu-item">
                           <a href="" class="nav__submenu-link">
@@ -636,7 +651,7 @@
           linguistic heritage.
         </p>
       </section>
-      <section class="container space-y-8 max-w-[1000px]">
+      <section class="container space-y-8 max-w-[1000px] text-lg">
         <h1 class="h1TitlesTextSize pt-32">CA22115: PhraConRep</h1>
         <div class="text-[var(--lowOpacityText)] text-lg space-y-12">
           <p>
