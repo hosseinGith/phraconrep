@@ -75,6 +75,10 @@ input {
     opacity: 1;
 }
 
+.h1TitlesTextSize {
+    @apply text-4xl
+}
+
 .titlesTextSize {
     @apply text-2xl
 }
