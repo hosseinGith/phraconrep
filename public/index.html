@@ -571,7 +571,85 @@
         </div>
       </section>
 
-      <section class="container">
+      <section class="container flex-row-center">
+
+  <form action="" class="bg-white shadow flex-col-center w-[55%] p-7 gap-4">
+  <!-- Row 1 -->
+  <div class="w-full flex-row-center gap-3">
+    <div class="flex flex-col gap-1 justify-center w-full">
+      <label for="fullName">Full Name:</label>
+      <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="e.g., John Doe"
+        class="w-full border border-gray-400 px-3 py-2 rounded-md"
+      />
+    </div>
+    <div class="flex flex-col gap-1 justify-center w-full">
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="e.g., john.doe@example.com"
+        class="w-full border border-gray-400 px-3 py-2 rounded-md"
+      />
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="w-full flex-row-center gap-3">
+    <div class="flex flex-col gap-1 justify-center w-full">
+      <label for="affiliation">Affiliation:</label>
+      <input
+        type="text"
+        id="affiliation"
+        name="affiliation"
+        placeholder="e.g., University of Tehran"
+        class="w-full border border-gray-400 px-3 py-2 rounded-md"
+      />
+    </div>
+    <div class="flex flex-col gap-1 justify-center w-full">
+      <label for="workingGroup">Working Group:</label>
+      <select
+        id="workingGroup"
+        name="workingGroup"
+        class="w-full border border-gray-400 px-3 py-2 rounded-md"
+      >
+        <option value="" disabled selected>Select a group</option>
+        <option value="WG1">WG1</option>
+        <option value="WG2">WG2</option>
+        <option value="WG3">WG3</option>
+        <option value="WG4">WG4</option>
+        <option value="WG5">WG5</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Biography -->
+  <div class="flex flex-col gap-1 justify-center w-full">
+    <label for="biography">Short Biography:</label>
+    <textarea
+      id="biography"
+      name="biography"
+      rows="4"
+      placeholder="Write a brief bio about your academic background, research interests, etc."
+      class="w-full border border-gray-400 px-3 py-2 rounded-md resize-none"
+    ></textarea>
+  </div>
+
+  <!-- Submit -->
+  <div class="w-full">
+    <button
+      type="submit"
+      class="w-full text-white bg-neutral-800 hover:bg-black py-2 rounded-md  transition"
+    >
+      Send
+    </button>
+  </div>
+</form>
+
 
       </section>
     </main>
