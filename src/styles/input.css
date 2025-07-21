@@ -1,58 +1,107 @@
 @import "tailwindcss";
 
 :root {
-  --mainColor: #34c0b8;
-  --textMainColor: #fff;
-  --textColor: #000;
-  --lowOpacityText: rgb(74, 74, 74);
+    --mainColor: #34c0b8;
+    --textMainColor: #fff;
+    --textColor: #000;
+    --lowOpacityText: rgb(74, 74, 74);
 }
 
-    body {
-        background: rgb(245, 245, 245);
-    }
-    button {
-        @apply cursor-pointer;
-    }
-    ul li a{
-        @apply hover:text-black transition-colors;
-    }
-    input{
-        @apply outline-none
-    }
-    .btn{
-        @apply border border-black hover:bg-black hover:text-white transition duration-75 cursor-pointer py-2 px-11 rounded-xs;
-    }
-    /* Helper classes */
-    .flex-row-center{
-        @apply flex justify-center items-center;
-    }
-    .flex-col-center{
-        @apply flex flex-col justify-center items-center;
-    }
-    .button {
-        @apply px-4 py-2 border hover:bg-black hover:text-white rounded hover:opacity-85 transition;
-    }
+body {
+    background: rgb(245, 245, 245);
+}
+
+button {
+    @apply cursor-pointer;
+}
+
+ul li a {
+    @apply hover:text-black transition-colors;
+}
+
+input {
+    @apply outline-none
+}
+
+.btn {
+    @apply border border-black hover:bg-black hover:text-white transition duration-75 cursor-pointer py-2 px-11 rounded-xs;
+}
+
+/* Helper classes */
+.flex-row-center {
+    @apply flex justify-center items-center;
+}
+
+.flex-col-center {
+    @apply flex flex-col justify-center items-center;
+}
+
+.button {
+    @apply px-4 py-2 border hover:bg-black hover:text-white rounded hover:opacity-85 transition;
+}
+
+.container {
+    @apply mx-auto md:px-16 p-4
+}
+
+/* fixed container screen for all devices */
+@media screen and (width<1366px) {
     .container {
-        @apply mx-auto px-16;
+        @apply max-w-none
     }
-    .nav__item {
-        @apply relative
-    }
-    .nav__link svg {
-        @apply inline w-5 h-5 transform transition-transform duration-300 group-hover:rotate-180;
-    }
-    /* My styles */
-    
+}
+
+.nav__item {
+    @apply relative
+}
+
+.nav__link svg {
+    @apply inline w-5 h-5 transform transition-transform duration-300 group-hover:rotate-180;
+}
+
+/* My styles */
 
 
-    .nav__submenu{
-        visibility: hidden;
-        opacity: 0;
-        transition: all 150ms ease-in;
-        transition-duration: 150ms;
-    }
-    .nav__item--has-submenu:hover .nav__submenu{
-        visibility: visible;
-        opacity: 1;
-    }
 
+.nav__submenu {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 150ms ease-in;
+    transition-duration: 150ms;
+}
+
+.nav__item--has-submenu:hover .nav__submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.h1TitlesTextSize {
+    @apply text-4xl
+}
+
+.titlesTextSize {
+    @apply text-2xl
+}
+
+.window {
+    @apply opacity-0 pointer-events-none transition-all fixed z-10 left-0 top-0 w-full h-full bg-[rgba(0,_0,_0,_.4)]
+}
+
+.window:not(.active) {
+    @apply delay-150
+}
+
+.window>div {
+    @apply transition-all
+}
+
+.window.active {
+    @apply flex opacity-100 pointer-events-auto
+}
+
+.window.active>div {
+    @apply translate-x-0 delay-150
+}
+.menuBg{
+    @apply bg-white
+}
