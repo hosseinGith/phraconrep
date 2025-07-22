@@ -109,7 +109,6 @@ input {
 .lowOpacityText {
   @apply text-[var(--lowOpacityText)];
 }
-
 .darkText {
   @apply text-[var(--darkText)];
 }
