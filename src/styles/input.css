@@ -113,3 +113,7 @@ input {
 .darkText {
   @apply text-[var(--darkText)];
 }
+
+.linksStyle {
+  @apply font-medium text-[var(--darkText)];
+}
