@@ -387,23 +387,28 @@
                   </div>
                 </li>
               </ul>
-              <form action="">
-                <search class="bg-white shadow-gray-400 shadow-sm flex">
-                  <input
-                    type="search"
-                    placeholder="Search"
-                    name="search"
-                    id="search"
-                    class="sm:w-[250px] w-full px-4 py-2"
-                  />
-                  <button class="p-2">
-                    <svg class="size-6">
-                      <use href="#searchIcon"></use>
-                    </svg>
-                  </button>
-                </search>
-              </form>
+              <button class="shadow-lg rounded-2xl p-4 hover:opacity-75">
+                <svg class="size-6">
+                  <use href="#searchIcon"></use>
+                </svg>
+              </button>
             </div>
+            <form class="absolute top-0 left-0 w-full h-[80px] block" action="" id="">
+              <search class="bg-white shadow-gray-400 shadow-sm flex h-full">
+                <input
+                  type="search"
+                  placeholder="Search"
+                  name="search"
+                  id="search"
+                  class="w-full px-4 py-2"
+                />
+                <button class="p-2">
+                  <svg class="size-6">
+                    <use href="#searchIcon"></use>
+                  </svg>
+                </button>
+              </search>
+            </form>
           </nav>
           <div id="menuContainer" class="window transition">
             <div class="max-w-[300px] h-full w-full menuBg px-4 overflow-auto">
