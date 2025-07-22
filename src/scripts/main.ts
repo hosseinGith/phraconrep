@@ -11,7 +11,7 @@ if (windowContainer) {
     "#menuHeaderShow"
   ) as HTMLElement | null;
 
-  const menuLis = menuContainer?.querySelectorAll("ul > li ");
+  const menuLis = menuContainer?.querySelectorAll("ul > .menuLiItems ");
 
   // window close && open
   windowContainer.addEventListener("click", function (e) {
@@ -27,16 +27,17 @@ if (windowContainer) {
 
   // menu nav lis
   menuLis?.forEach((item) => {
-    item.addEventListener("click", () => {
-      item.querySelector("svg")?.classList.toggle("rotate-180");
-      console.log(menuLis);
-
-      menuLis.forEach((item) => {
-        item.querySelector(".menuDropDown")?.classList.remove("h-0");
-        item.querySelector(".menuDropDown")?.classList.remove("opacity-0");
+    item.addEventListener("click", (e) => {
+      menuLis.forEach((it) => {
+        if (it === item) return;
+        it.querySelector(".menuDropDown")?.classList.add("h-0");
+        it.querySelector(".menuDropDown")?.classList.add("opacity-0");
+        it.querySelector("svg")?.classList.remove("rotate-180");
       });
+
       item.querySelector(".menuDropDown")?.classList.toggle("h-0");
       item.querySelector(".menuDropDown")?.classList.toggle("opacity-0");
+      item.querySelector("svg")?.classList.toggle("rotate-180");
     });
   });
 }

@@ -102,6 +102,11 @@ input {
 .window.active>div {
     @apply translate-x-0 delay-150
 }
-.menuBg{
+
+.menuBg {
     @apply bg-white
+}
+
+.lowOpacityText {
+    @apply text-[var(--lowOpacityText)]
 }
