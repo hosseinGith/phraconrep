@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/styles/output.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <title>
       Enhancing the theory of Phraseme Constructions: definition,
       classification, analysis
@@ -640,7 +645,7 @@
       </section>
     </header>
 
-    <main class="md:px-4 py-16">
+    <main class="md:px-4 py-16 mb-12">
       <section class="container md:text-2xl text-xl">
         <div class="space-y-8">
           <h1 class="h1TitlesTextSize darkText">
@@ -717,7 +722,123 @@
           </div>
         </a>
       </section>
+      <section class="container my-11">
+        <!-- Swiper -->
+        <div class="swiper mySwiper bg-white shadow">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide px-4">
+              <img
+                src="../public/images/sliderpic.jpg"
+                alt=""
+                class="aspect-video object-contain w-full h-[342px]"
+              />
+            </div>
+            <div class="swiper-slide px-4">
+              <img
+                src="../public/images/sliderpic.jpg"
+                alt=""
+                class="aspect-video object-contain w-full h-[342px]"
+              />
+            </div>
+            <div class="swiper-slide px-4">
+              <img
+                src="../public/images/sliderpic.jpg"
+                alt=""
+                class="aspect-video object-contain w-full h-[342px]"
+              />
+            </div>
+            <div class="swiper-slide px-4">
+              <img
+                src="../public/images/sliderpic.jpg"
+                alt=""
+                class="aspect-video object-contain w-full h-[342px]"
+              />
+            </div>
+            <div class="swiper-slide px-4">
+              <img
+                src="../public/images/sliderpic.jpg"
+                alt=""
+                class="aspect-video object-contain w-full h-[342px]"
+              />
+            </div>
+            <div class="swiper-slide px-4">
+              <img
+                src="../public/images/sliderpic.jpg"
+                alt=""
+                class="aspect-video object-contain w-full h-[342px]"
+              />
+            </div>
+            <div class="swiper-slide px-4">
+              <img
+                src="../public/images/sliderpic.jpg"
+                alt=""
+                class="aspect-video object-contain w-full h-[342px]"
+              />
+            </div>
+            <div class="swiper-slide px-4">
+              <img
+                src="../public/images/sliderpic.jpg"
+                alt=""
+                class="aspect-video object-contain w-full h-[342px]"
+              />
+            </div>
+          </div>
+
+          <!-- دکمه‌های ناوبری -->
+          <div class="pb-5 flex-row-center gap-x-3">
+            <button
+              class="swiper-custom-button-prev border rounded-full hover:bg-black hover:text-white p-1 transition-colors duration-75"
+            >
+              <svg class="w-9 h-9">
+                <use href="#chevron_left"></use>
+              </svg>
+            </button>
+            <button
+              class="swiper-custom-button-next border rounded-full hover:bg-black hover:text-white p-1 transition-colors duration-75"
+            >
+              <svg class="w-9 h-9">
+                <use href="#chevron_right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <section
+        class="flex container gap-x-10 gap-y-2 justify-between items-center lg:flex-row flex-col mb-8"
+      >
+        <p>All rights reserved 2024 © PhraConRep Network</p>
+        <p>phraconrepcostaction@gmail.com | CA22115</p>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          600: {
+            slidesPerView: 2,
+          },
+          900: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+        },
+        spaceBetween: 10,
+        center: true,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-custom-button-next",
+          prevEl: ".swiper-custom-button-prev",
+        },
+      });
+    </script>
     <script src="../dist/scripts/main.js"></script>
   </body>
 </html>
