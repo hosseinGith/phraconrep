@@ -1,3 +1,6 @@
+const copyWriteYear = document.querySelector(
+  "#copyWriteYear"
+) as HTMLElement | null;
 const windowContainer = document.querySelector(".window") as HTMLElement | null;
 const menuContainer = document.querySelector(
   "#menuContainer"
@@ -40,4 +43,7 @@ if (windowContainer) {
       item.querySelector("svg")?.classList.toggle("rotate-180");
     });
   });
+}
+if (copyWriteYear) {
+  copyWriteYear.textContent = String(new Date().getFullYear());
 }

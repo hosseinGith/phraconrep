@@ -1,4 +1,5 @@
 "use strict";
+const copyWriteYear = document.querySelector("#copyWriteYear");
 const windowContainer = document.querySelector(".window");
 const menuContainer = document.querySelector("#menuContainer");
 if (windowContainer) {
@@ -33,4 +34,7 @@ if (windowContainer) {
             (_c = item.querySelector("svg")) === null || _c === void 0 ? void 0 : _c.classList.toggle("rotate-180");
         });
     });
+}
+if (copyWriteYear) {
+    copyWriteYear.textContent = String(new Date().getFullYear());
 }
