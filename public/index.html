@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/styles/output.css" />
     <!-- Swiper CSS -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    /> -->
+    <link rel="stylesheet" href="../src/styles/swiper.css" />
     <title>phraconrep</title>
   </head>
   <body class="relative">
@@ -200,12 +197,12 @@
       </div>
 
       <section class="bg-white shadow z-50">
-        <div class="container py-6">
+        <div class="px-4 py-6 headerMaxWidth">
           <nav class="flex justify-between items-center">
-            <div class="flex justify-between items-center w-full">
+            <div class="flex justify-between items-center w-full gap-4">
               <button
                 id="menuHeaderShow"
-                class="xl:hidden p-1 flex items-center gap-1"
+                class="lg:hidden p-1 flex items-center gap-1"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -223,19 +220,19 @@
                   <span>Menu</span>
                 </svg>
               </button>
-              <div class="xl:max-w-[150px] w-full flex justify-center">
+              <div class="max-w-full w-[280px] flex justify-center">
                 <a
                   href="/"
-                  class="inline-block nav__link font-semibold sm:ml-12 xl:ml-0"
+                  class="inline-block nav__link font-semibold sm:ml-12 lg:ml-0"
                 >
                   <img
                     src="../public/images/PHRACONREP.png"
                     alt=""
-                    class="xl:w-full w-[250px] xl:h-full"
+                    class="lg:w-full w-[250px] lg:h-full"
                   />
                 </a>
               </div>
-              <ul class="xl:flex gap-4 w-full hidden">
+              <ul class="lg:flex gap-4 w-full hidden justify-center xl:text-lg">
                 <li class="nav__item">
                   <a href="#" class="nav__link">Home</a>
                 </li>
@@ -733,14 +730,14 @@
 
         <div class="left-0 md:col-span-7 shadow p-11 bg-white">
           <div>
-            <span class="text-[#BCB3B3] text-3xl">Welcome to PhraConRep</span>
-            <p class="text-[#418181] md:text-4xl text-2xl">
+            <h1 class="h1TitlesTextSize">Welcome to PhraConRep</h1>
+            <p class="text-[#418181] titlesTextSize">
               A Journey into the Heart of Idiomatic Word Combinations in Middle
               and Eastern European Languages
             </p>
           </div>
-          <div class="pt-11">
-            <p class="font-thin">
+          <div class="pt-4">
+            <p class="font-thin largeOtherTextSize">
               Delve into the fascinating world of Phraseme Constructions!
               PhraConRep is an innovative COST Action project focused on
               unearthing and understanding Phraseme Constructions (PhraCons) —
@@ -870,11 +867,11 @@
         <!-- متن -->
         <div class="bg-white shadow p-8 flex flex-col justify-center">
           <h2
-            class="text-[#418181] text-3xl md:text-4xl font-semibold leading-snug"
+            class="text-[#418181] titlesTextSize font-semibold leading-snug "
           >
             Join <span class="text-[#7C7F83]">PhraConRep</span> Community
           </h2>
-          <p class="text-[#7C7F83] text-lg lg:text-xl mt-4 text-justify">
+          <p class="text-[#7C7F83] text-lg lg:text-xl mt-4 text-justify  largeOtherTextSize">
             Become a part of our growing community of language enthusiasts and
             experts. Stay updated with our latest research, access our
             comprehensive PhraCons repository, and contribute to the evolving
@@ -899,8 +896,11 @@
       <section
         class="container justify-between bg-white p-7 flex-wrap shadow px-8 grid md:grid-cols-2 grid-cols-1 gap-4"
       >
-        <form action="" class="bg-white shadow flex-col-center p-7 gap-4">
-          <h2 class="text-4xl font-semibold pb-3">Contact</h2>
+        <form
+          action=""
+          class="bg-white shadow flex items-center justify-between flex-col p-7 gap-4"
+        >
+          <h2 class="h1TitlesTextSize font-semibold pb-3">Contact</h2>
           <!-- Row 1 -->
           <div class="w-full flex-col-center gap-3">
             <div class="flex flex-col gap-1 justify-center w-full">
@@ -949,9 +949,9 @@
         </form>
         <form
           action=""
-          class="bg-white shadow flex-col-center p-7 gap-4 h-full"
+          class="bg-white shadow flex items-center justify-between flex-col p-7 gap-4 h-full"
         >
-          <h2 class="text-4xl font-semibold pb-3">Join the Network</h2>
+          <h2 class="h1TitlesTextSize font-semibold pb-3">Join the Network</h2>
           <!-- Row 1 -->
           <div class="w-full flex-row-center gap-3">
             <div class="flex flex-col gap-1 justify-center w-full">
@@ -1042,7 +1042,7 @@
       </section>
     </footer>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+    <script src="../dist/scripts/swiper.js"></script>
     <!-- Init Swiper -->
     <script>
       const swiper = new Swiper(".mySwiper", {
