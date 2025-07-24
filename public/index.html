@@ -605,11 +605,10 @@
                             Virtual Mobility Network
                           </a>
                         </li>
-                        <li class="nav__submenu-item hover:opacity-[100_!important]">
-                          <a
-                            href=""
-                            class="nav__submenu-link hover:opacity-75"
-                          >
+                        <li
+                          class="nav__submenu-item hover:opacity-[100_!important]"
+                        >
+                          <a href="" class="nav__submenu-link hover:opacity-75">
                             Conference Grants
                           </a>
                           <ol class="pl-4 *:hover:opacity-75">
@@ -902,9 +901,7 @@
           <h2 class="text-[#418181] titlesTextSize font-semibold leading-snug">
             Join <span class="text-[#7C7F83]">PhraConRep</span> Community
           </h2>
-          <p
-            class="text-[#7C7F83] text-lg lg:text-xl mt-4 text-justify largeOtherTextSize"
-          >
+          <p class="text-lg lg:text-xl mt-4 text-justify largeOtherTextSize">
             Become a part of our growing community of language enthusiasts and
             experts. Stay updated with our latest research, access our
             comprehensive PhraCons repository, and contribute to the evolving
@@ -925,13 +922,118 @@
           />
         </div>
       </section>
+      <section class="container">
+        <div
+          class="bg-white justify-between p-7 flex-wrap shadow px-8 grid lg:grid-cols-2 grid-cols-1 gap-y-6 gap-x-4 py-8"
+        >
+          <div class="otherTextSize space-y-4">
+            <h3 class="titlesTextSize">
+              DO YOU WANT TO JOIN THE NETWORK AND SHARE WHAT IS ON YOUR MIND?
+            </h3>
+            <p>
+              PhraConRep continues to expand, and we warmly invite those
+              passionate about our topics and goals to join us!
+            </p>
+            <p>
+              If you want to join, click the button Read more. It will take you
+              to the COST website, where you will find more information on how
+              to sign up and become an active participant in our growing
+              community.
+            </p>
+          </div>
+          <form
+            action=""
+            class="bg-white  flex items-center justify-between flex-col p-7 gap-4 h-full"
+          >
+            <h2 class="h1TitlesTextSize font-semibold pb-3">
+              Join the Network
+            </h2>
+            <!-- Row 1 -->
+            <div class="w-full flex-row-center gap-3">
+              <div class="flex flex-col gap-1 justify-center w-full">
+                <label for="fullName">Full Name:</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="e.g., John Doe"
+                  class="w-full border border-gray-400 px-3 py-2 rounded-md"
+                />
+              </div>
+              <div class="flex flex-col gap-1 justify-center w-full">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="e.g., john.doe@example.com"
+                  class="w-full border border-gray-400 px-3 py-2 rounded-md"
+                />
+              </div>
+            </div>
 
+            <!-- Row 2 -->
+            <div class="w-full flex-row-center gap-3">
+              <div class="flex flex-col gap-1 justify-center w-full">
+                <label for="affiliation">Affiliation:</label>
+                <input
+                  type="text"
+                  id="affiliation"
+                  name="affiliation"
+                  placeholder="e.g., University of Tehran"
+                  class="w-full border border-gray-400 px-3 py-2 rounded-md"
+                />
+              </div>
+              <div class="flex flex-col gap-1 justify-center w-full">
+                <label for="workingGroup">Working Group:</label>
+                <select
+                  id="workingGroup"
+                  name="workingGroup"
+                  class="w-full border border-gray-400 px-3 py-2 rounded-md"
+                >
+                  <option value="" disabled selected>Select a group</option>
+                  <option value="WG1">WG1</option>
+                  <option value="WG2">WG2</option>
+                  <option value="WG3">WG3</option>
+                  <option value="WG4">WG4</option>
+                  <option value="WG5">WG5</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Biography -->
+            <div class="flex flex-col gap-1 justify-center w-full">
+              <label for="biography">Short Biography:</label>
+              <textarea
+                id="biography"
+                name="biography"
+                rows="4"
+                placeholder="Write a brief bio about your academic background, research interests, etc."
+                class="w-full border border-gray-400 px-3 py-2 rounded-md resize-none"
+              ></textarea>
+            </div>
+
+            <!-- Submit -->
+            <div class="w-full">
+              <button
+                type="submit"
+                class="w-full text-white bg-neutral-800 hover:bg-black py-2 rounded-md transition"
+              >
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pt-12">
       <section
-        class="container justify-between bg-white p-7 flex-wrap shadow px-8 grid md:grid-cols-2 grid-cols-1 gap-4"
+        class="container justify-between flex-wrap  gap-4 w-full "
       >
         <form
           action=""
-          class="bg-white shadow flex items-center justify-between flex-col p-7 gap-4"
+          class="bg-white shadow flex items-center max-w-[400px] justify-between flex-col p-7 gap-4 w-full"
         >
           <h2 class="h1TitlesTextSize font-semibold pb-3">Contact</h2>
           <!-- Row 1 -->
@@ -980,90 +1082,7 @@
             </button>
           </div>
         </form>
-        <form
-          action=""
-          class="bg-white shadow flex items-center justify-between flex-col p-7 gap-4 h-full"
-        >
-          <h2 class="h1TitlesTextSize font-semibold pb-3">Join the Network</h2>
-          <!-- Row 1 -->
-          <div class="w-full flex-row-center gap-3">
-            <div class="flex flex-col gap-1 justify-center w-full">
-              <label for="fullName">Full Name:</label>
-              <input
-                type="text"
-                id="fullName"
-                name="fullName"
-                placeholder="e.g., John Doe"
-                class="w-full border border-gray-400 px-3 py-2 rounded-md"
-              />
-            </div>
-            <div class="flex flex-col gap-1 justify-center w-full">
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="e.g., john.doe@example.com"
-                class="w-full border border-gray-400 px-3 py-2 rounded-md"
-              />
-            </div>
-          </div>
-
-          <!-- Row 2 -->
-          <div class="w-full flex-row-center gap-3">
-            <div class="flex flex-col gap-1 justify-center w-full">
-              <label for="affiliation">Affiliation:</label>
-              <input
-                type="text"
-                id="affiliation"
-                name="affiliation"
-                placeholder="e.g., University of Tehran"
-                class="w-full border border-gray-400 px-3 py-2 rounded-md"
-              />
-            </div>
-            <div class="flex flex-col gap-1 justify-center w-full">
-              <label for="workingGroup">Working Group:</label>
-              <select
-                id="workingGroup"
-                name="workingGroup"
-                class="w-full border border-gray-400 px-3 py-2 rounded-md"
-              >
-                <option value="" disabled selected>Select a group</option>
-                <option value="WG1">WG1</option>
-                <option value="WG2">WG2</option>
-                <option value="WG3">WG3</option>
-                <option value="WG4">WG4</option>
-                <option value="WG5">WG5</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Biography -->
-          <div class="flex flex-col gap-1 justify-center w-full">
-            <label for="biography">Short Biography:</label>
-            <textarea
-              id="biography"
-              name="biography"
-              rows="4"
-              placeholder="Write a brief bio about your academic background, research interests, etc."
-              class="w-full border border-gray-400 px-3 py-2 rounded-md resize-none"
-            ></textarea>
-          </div>
-
-          <!-- Submit -->
-          <div class="w-full">
-            <button
-              type="submit"
-              class="w-full text-white bg-neutral-800 hover:bg-black py-2 rounded-md transition"
-            >
-              Send
-            </button>
-          </div>
-        </form>
       </section>
-    </main>
-
-    <footer class="pt-12">
       <section
         class="flex container gap-x-10 gap-y-2 justify-between items-center lg:flex-row flex-col mt-2"
       >
