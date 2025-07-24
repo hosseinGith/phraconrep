@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/styles/output.css" />
     <!-- Swiper CSS -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    /> -->
     <title>phraconrep</title>
   </head>
   <body class="relative">
@@ -383,9 +383,7 @@
                         </a>
                       </li>
                       <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link">
-                          News & Events
-                        </a>
+                        <a href="" class="nav__submenu-link"> News & Events </a>
                       </li>
                     </ul>
                   </div>
@@ -867,28 +865,28 @@
       </section>
 
       <section
-        class="container grid grid-cols-1 md:grid-cols-12 items-stretch my-10 gap-3"
+        class="container flex lg:flex-row flex-col items-center my-10 gap-3"
       >
         <!-- متن -->
-        <div
-          class="col-span-12 md:col-span-7 bg-white shadow p-8 flex flex-col justify-center"
-        >
+        <div class="bg-white shadow p-8 flex flex-col justify-center">
           <h2
             class="text-[#418181] text-3xl md:text-4xl font-semibold leading-snug"
           >
             Join <span class="text-[#7C7F83]">PhraConRep</span> Community
           </h2>
-          <p class="text-[#7C7F83] text-lg md:text-xl mt-4 text-justify">
+          <p class="text-[#7C7F83] text-lg lg:text-xl mt-4 text-justify">
             Become a part of our growing community of language enthusiasts and
             experts. Stay updated with our latest research, access our
             comprehensive PhraCons repository, and contribute to the evolving
-            field of language studies.
+            field of language studies. Participate in our upcoming workshops,
+            webinars, and conferences. Connect with experts, share ideas, and be
+            part of a vibrant community of researchers.
           </p>
         </div>
 
         <!-- تصویر -->
         <div
-          class="col-span-12 md:col-span-5 overflow-hidden h-full flex flex-col justify-center items-center"
+          class="overflow-hidden h-full flex flex-col justify-center items-center"
         >
           <img
             src="../public/images/shutterstock.jpg"
@@ -898,8 +896,61 @@
         </div>
       </section>
 
-      <section class="container flex-row-center">
+      <section
+        class="container justify-between bg-white p-7 flex-wrap shadow px-8 grid md:grid-cols-2 grid-cols-1 gap-4"
+      >
         <form action="" class="bg-white shadow flex-col-center p-7 gap-4">
+          <h2 class="text-4xl font-semibold pb-3">Contact</h2>
+          <!-- Row 1 -->
+          <div class="w-full flex-col-center gap-3">
+            <div class="flex flex-col gap-1 justify-center w-full">
+              <label for="fullName">Full Name:</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="e.g., John Doe"
+                class="w-full border border-gray-400 px-3 py-2 rounded-md"
+              />
+            </div>
+            <div class="flex flex-col gap-1 justify-center w-full">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="e.g., john.doe@example.com"
+                class="w-full border border-gray-400 px-3 py-2 rounded-md"
+              />
+            </div>
+          </div>
+
+          <!-- Biography -->
+          <div class="flex flex-col gap-1 justify-center w-full">
+            <label for="biography">Message:</label>
+            <textarea
+              id="biography"
+              name="biography"
+              rows="4"
+              placeholder="Your message"
+              class="w-full border border-gray-400 px-3 py-2 rounded-md resize-none"
+            ></textarea>
+          </div>
+
+          <!-- Submit -->
+          <div class="w-full">
+            <button
+              type="submit"
+              class="w-full text-white bg-neutral-800 hover:bg-black py-2 rounded-md transition"
+            >
+              Send
+            </button>
+          </div>
+        </form>
+        <form
+          action=""
+          class="bg-white shadow flex-col-center p-7 gap-4 h-full"
+        >
           <h2 class="text-4xl font-semibold pb-3">Join the Network</h2>
           <!-- Row 1 -->
           <div class="w-full flex-row-center gap-3">
@@ -977,98 +1028,11 @@
           </div>
         </form>
       </section>
-
-      <section
-        class="container grid grid-cols-1 md:grid-cols-12 items-stretch my-10 gap-3"
-      >
-        <!-- تصویر -->
-        <div
-          class="col-span-12 md:col-span-5 overflow-hidden h-full flex flex-col justify-center items-center"
-        >
-          <img
-            src="../public/images/Community.jpg"
-            alt=""
-            class="w-[100%] h-[333px] object-cover"
-          />
-        </div>
-        <!-- متن -->
-        <div
-          class="col-span-12 md:col-span-7 bg-white shadow p-8 flex flex-col justify-center"
-        >
-          <h2
-            class="text-[#7C7F83] text-3xl md:text-4xl font-semibold leading-snug"
-          >
-            Engage with Our <span class="text-[#418181]">Global</span> Community
-          </h2>
-          <p class="text-[#7C7F83] text-lg md:text-xl mt-4 text-justify">
-            Participate in our upcoming workshops, webinars, and conferences.
-            Connect with experts, share ideas, and be part of a vibrant
-            community of researchers.
-          </p>
-        </div>
-      </section>
     </main>
 
-    <footer class="py-8">
-      <section class="shadow px-8">
-        <div
-          class="container flex justify-between bg-white p-7 flex-col md:flex-row"
-        >
-          <div class=""></div>
-          <div class="md:w-1/3 w-full">
-            <form action="" class="bg-white shadow flex-col-center p-7 gap-4">
-              <h2 class="text-4xl font-semibold pb-3">Contact</h2>
-              <!-- Row 1 -->
-              <div class="w-full flex-col-center gap-3">
-                <div class="flex flex-col gap-1 justify-center w-full">
-                  <label for="fullName">Full Name:</label>
-                  <input
-                    type="text"
-                    id="fullName"
-                    name="fullName"
-                    placeholder="e.g., John Doe"
-                    class="w-full border border-gray-400 px-3 py-2 rounded-md"
-                  />
-                </div>
-                <div class="flex flex-col gap-1 justify-center w-full">
-                  <label for="email">Email:</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="e.g., john.doe@example.com"
-                    class="w-full border border-gray-400 px-3 py-2 rounded-md"
-                  />
-                </div>
-              </div>
-
-              <!-- Biography -->
-              <div class="flex flex-col gap-1 justify-center w-full">
-                <label for="biography">Message:</label>
-                <textarea
-                  id="biography"
-                  name="biography"
-                  rows="4"
-                  placeholder="Your message"
-                  class="w-full border border-gray-400 px-3 py-2 rounded-md resize-none"
-                ></textarea>
-              </div>
-
-              <!-- Submit -->
-              <div class="w-full">
-                <button
-                  type="submit"
-                  class="w-full text-white bg-neutral-800 hover:bg-black py-2 rounded-md transition"
-                >
-                  Send
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
+    <footer class="pt-12">
       <section
-        class="flex container gap-x-10 gap-y-2 justify-between items-center lg:flex-row flex-col my-8"
+        class="flex container gap-x-10 gap-y-2 justify-between items-center lg:flex-row flex-col mt-8"
       >
         <p>
           All rights reserved <span id="copyWriteYear"></span> © PhraConRep
@@ -1078,7 +1042,7 @@
       </section>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
     <!-- Init Swiper -->
     <script>
       const swiper = new Swiper(".mySwiper", {
