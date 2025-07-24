@@ -196,12 +196,12 @@
       </div>
 
       <section class="bg-white shadow z-50">
-        <div class="container py-6">
+        <div class="px-4 py-6 headerMaxWidth">
           <nav class="flex justify-between items-center">
-            <div class="flex justify-between items-center w-full">
+            <div class="flex justify-between items-center w-full gap-4">
               <button
                 id="menuHeaderShow"
-                class="xl:hidden p-1 flex items-center gap-1"
+                class="lg:hidden p-1 flex items-center gap-1"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -219,19 +219,19 @@
                   <span>Menu</span>
                 </svg>
               </button>
-              <div class="xl:max-w-[150px] w-full flex justify-center">
+              <div class="max-w-full w-[280px] flex justify-center">
                 <a
                   href="/"
-                  class="inline-block nav__link font-semibold sm:ml-12 xl:ml-0"
+                  class="inline-block nav__link font-semibold sm:ml-12 lg:ml-0"
                 >
                   <img
                     src="../public/images/PHRACONREP.png"
                     alt=""
-                    class="xl:w-full w-[250px] xl:h-full"
+                    class="lg:w-full w-[250px] lg:h-full"
                   />
                 </a>
               </div>
-              <ul class="xl:flex gap-4 w-full hidden">
+              <ul class="lg:flex gap-4 w-full hidden justify-center xl:text-lg">
                 <li class="nav__item">
                   <a href="#" class="nav__link">Home</a>
                 </li>
@@ -341,6 +341,19 @@
                         <a href="" class="nav__submenu-link">
                           Conference Grants
                         </a>
+                        <ol class="pl-4">
+                          <li>
+                            <a href="#" class="block"
+                              >Dissemination Conference Grant</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" class="block">ITC Conference Grant</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block">YRI Conference Grants</a>
+                          </li>
+                        </ol>
                       </li>
                     </ul>
                   </div>
@@ -379,9 +392,7 @@
                         </a>
                       </li>
                       <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link">
-                          News & Events
-                        </a>
+                        <a href="" class="nav__submenu-link"> News & Events </a>
                       </li>
                     </ul>
                   </div>
@@ -486,12 +497,14 @@
                 </button>
               </div>
               <nav class="pb-8">
-                <ul class="flex flex-col gap-4 w-full *:transition-opacity">
+                <ul
+                  class="flex flex-col gap-4 w-full *:transition-opacity text-start"
+                >
                   <li>
-                    <a href="#" class="nav__link">Home</a>
+                    <a href="#" class="nav__link block">Home</a>
                   </li>
                   <li class="menuLiItems">
-                    <a href="#" class="hover:opacity-75 nav__link">
+                    <a href="#" class="hover:opacity-75 nav__link block">
                       About
                       <svg class="">
                         <use href="#icon-chevron-down"></use>
@@ -525,7 +538,7 @@
                     </div>
                   </li>
                   <li class="menuLiItems">
-                    <a href="#" class="hover:opacity-75 nav__link"
+                    <a href="#" class="hover:opacity-75 nav__link block"
                       >Network
                       <svg class="inline w-5 h-5">
                         <use href="#icon-chevron-down"></use>
@@ -569,7 +582,7 @@
                     </div>
                   </li>
                   <li class="menuLiItems">
-                    <a href="#" class="hover:opacity-75 nav__link">
+                    <a href="#" class="hover:opacity-75 nav__link block">
                       Opportunities
                       <svg class="inline w-5 h-5">
                         <use href="#icon-chevron-down"></use>
@@ -591,16 +604,33 @@
                             Virtual Mobility Network
                           </a>
                         </li>
-                        <li class="nav__submenu-item">
-                          <a href="" class="nav__submenu-link">
+                        <li
+                          class="nav__submenu-item hover:opacity-[100_!important]"
+                        >
+                          <a href="" class="nav__submenu-link hover:opacity-75">
                             Conference Grants
                           </a>
+                          <ol class="pl-4 *:hover:opacity-75">
+                            <li>
+                              <a href="#" class="block"
+                                >Dissemination Conference Grant</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="block">ITC Conference Grant</a>
+                            </li>
+                            <li>
+                              <a href="#" class="block"
+                                >YRI Conference Grants</a
+                              >
+                            </li>
+                          </ol>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li class="menuLiItems">
-                    <a href="#" class="hover:opacity-75 nav__link">
+                    <a href="#" class="hover:opacity-75 nav__link block">
                       Activities & Events
                       <svg class="inline w-5 h-5">
                         <use href="#icon-chevron-down"></use>
@@ -641,7 +671,7 @@
                     </div>
                   </li>
                   <li class="menuLiItems">
-                    <a href="#" class="hover:opacity-75 nav__link">
+                    <a href="#" class="hover:opacity-75 nav__link block">
                       Resources
                       <svg class="inline w-5 h-5">
                         <use href="#icon-chevron-down"></use>
@@ -675,7 +705,7 @@
                     </div>
                   </li>
                   <li class="menuLiItems">
-                    <a href="#" class="hover:opacity-75 nav__link">
+                    <a href="#" class="hover:opacity-75 nav__link block">
                       Join Us
                       <svg class="inline w-5 h-5">
                         <use href="#icon-chevron-down"></use>
