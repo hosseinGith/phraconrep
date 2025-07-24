@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/styles/output.css" />
-    <title>ITC Conference Grants for COST Action Phraconrep (CA22115)</title>
+    <title></title>
   </head>
   <body>
     <!-- image efect full page -->
@@ -119,18 +119,19 @@
         />
       </symbol>
     </svg>
+
     <header class="relative">
       <div class="absolute top-0 right-0 z-[-1]">
         <img src="../public/images/Decore.svg" alt="" />
       </div>
 
       <section class="bg-white shadow z-50">
-        <div class="px-4 py-6 headerMaxWidth">
+        <div class="container py-6">
           <nav class="flex justify-between items-center">
-            <div class="flex justify-between items-center w-full gap-4">
+            <div class="flex justify-between items-center w-full">
               <button
                 id="menuHeaderShow"
-                class="lg:hidden p-1 flex items-center gap-1"
+                class="xl:hidden p-1 flex items-center gap-1"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -145,22 +146,21 @@
                     stroke-linejoin="round"
                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                   />
-                  <span>Menu</span>
                 </svg>
               </button>
-              <div class="max-w-full w-[280px] flex justify-center">
+              <div class="xl:max-w-[150px] w-full flex justify-center">
                 <a
                   href="/"
-                  class="inline-block nav__link font-semibold sm:ml-12 lg:ml-0"
+                  class="inline-block nav__link font-semibold sm:ml-12 xl:ml-0"
                 >
                   <img
                     src="../public/images/PHRACONREP.png"
                     alt=""
-                    class="lg:w-full w-[250px] lg:h-full"
+                    class="xl:w-full w-[250px] xl:h-full"
                   />
                 </a>
               </div>
-              <ul class="lg:flex gap-4 w-full hidden justify-center xl:text-lg">
+              <ul class="xl:flex gap-4 w-full hidden">
                 <li class="nav__item">
                   <a href="#" class="nav__link">Home</a>
                 </li>
@@ -188,11 +188,6 @@
                       <li class="nav__submenu-item">
                         <a href="" class="nav__submenu-link"
                           >Memorandum of Understanding (MoU)</a
-                        >
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link"
-                          >Impact & Achievements</a
                         >
                       </li>
                     </ul>
@@ -270,19 +265,6 @@
                         <a href="" class="nav__submenu-link">
                           Conference Grants
                         </a>
-                        <ol class="pl-4">
-                          <li>
-                            <a href="#" class="block"
-                              >Dissemination Conference Grant</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#" class="block">ITC Conference Grant</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block">YRI Conference Grants</a>
-                          </li>
-                        </ol>
                       </li>
                     </ul>
                   </div>
@@ -321,7 +303,9 @@
                         </a>
                       </li>
                       <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link"> News & Events </a>
+                        <a href="" class="nav__submenu-link">
+                          Streamlined from original "News & Events"
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -427,13 +411,13 @@
               </div>
               <nav class="pb-8">
                 <ul
-                  class="flex flex-col gap-4 w-full *:transition-opacity text-start"
+                  class="flex flex-col gap-4 w-full *:hover:opacity-75 *:transition-opacity"
                 >
                   <li>
-                    <a href="#" class="nav__link block">Home</a>
+                    <a href="#" class="nav__link">Home</a>
                   </li>
                   <li class="menuLiItems">
-                    <a href="#" class="hover:opacity-75 nav__link block">
+                    <a href="#" class="nav__link">
                       About
                       <svg class="">
                         <use href="#icon-chevron-down"></use>
@@ -442,9 +426,7 @@
                     <div
                       class="w-full rounded h-0 overflow-hidden opacity-0 menuDropDown transition-opacity"
                     >
-                      <ul
-                        class="nav__submenu-list space-y-2 p-4 *:hover:opacity-75"
-                      >
+                      <ul class="nav__submenu-list space-y-2 p-4">
                         <li class="nav__submenu-item">
                           <a href="" class="nav__submenu-link"
                             >About Phraconrep</a
@@ -458,16 +440,11 @@
                             >Memorandum of Understanding (MoU)</a
                           >
                         </li>
-                        <li class="nav__submenu-item">
-                          <a href="" class="nav__submenu-link"
-                            >Impact & Achievements</a
-                          >
-                        </li>
                       </ul>
                     </div>
                   </li>
                   <li class="menuLiItems">
-                    <a href="#" class="hover:opacity-75 nav__link block"
+                    <a href="#" class="nav__link"
                       >Network
                       <svg class="inline w-5 h-5">
                         <use href="#icon-chevron-down"></use>
@@ -476,9 +453,7 @@
                     <div
                       class="w-full rounded h-0 overflow-hidden opacity-0 menuDropDown transition-opacity"
                     >
-                      <ul
-                        class="nav__submenu-list space-y-2 p-4 *:hover:opacity-75"
-                      >
+                      <ul class="nav__submenu-list space-y-2 p-4">
                         <li class="nav__submenu-item">
                           <a href="" class="nav__submenu-link">All</a>
                         </li>
@@ -511,7 +486,7 @@
                     </div>
                   </li>
                   <li class="menuLiItems">
-                    <a href="#" class="hover:opacity-75 nav__link block">
+                    <a href="#" class="nav__link">
                       Opportunities
                       <svg class="inline w-5 h-5">
                         <use href="#icon-chevron-down"></use>
@@ -520,9 +495,7 @@
                     <div
                       class="w-full rounded h-0 overflow-hidden opacity-0 menuDropDown transition-opacity"
                     >
-                      <ul
-                        class="nav__submenu-list space-y-2 p-4 *:hover:opacity-75"
-                      >
+                      <ul class="nav__submenu-list space-y-2 p-4">
                         <li class="nav__submenu-item">
                           <a href="" class="nav__submenu-link">
                             STSM (Short Term Scientific Missions)
@@ -533,33 +506,16 @@
                             Virtual Mobility Network
                           </a>
                         </li>
-                        <li
-                          class="nav__submenu-item hover:opacity-[100_!important]"
-                        >
-                          <a href="" class="nav__submenu-link hover:opacity-75">
+                        <li class="nav__submenu-item">
+                          <a href="" class="nav__submenu-link">
                             Conference Grants
                           </a>
-                          <ol class="pl-4 *:hover:opacity-75">
-                            <li>
-                              <a href="#" class="block"
-                                >Dissemination Conference Grant</a
-                              >
-                            </li>
-                            <li>
-                              <a href="#" class="block">ITC Conference Grant</a>
-                            </li>
-                            <li>
-                              <a href="#" class="block"
-                                >YRI Conference Grants</a
-                              >
-                            </li>
-                          </ol>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li class="menuLiItems">
-                    <a href="#" class="hover:opacity-75 nav__link block">
+                    <a href="#" class="nav__link">
                       Activities & Events
                       <svg class="inline w-5 h-5">
                         <use href="#icon-chevron-down"></use>
@@ -568,9 +524,7 @@
                     <div
                       class="w-full rounded h-0 overflow-hidden opacity-0 menuDropDown transition-opacity"
                     >
-                      <ul
-                        class="nav__submenu-list space-y-2 p-4 *:hover:opacity-75"
-                      >
+                      <ul class="nav__submenu-list space-y-2 p-4">
                         <li class="nav__submenu-item">
                           <a href="" class="nav__submenu-link">
                             Upcoming Events
@@ -593,14 +547,14 @@
                         </li>
                         <li class="nav__submenu-item">
                           <a href="" class="nav__submenu-link">
-                            News & Events
+                            Streamlined from original "News & Events"
                           </a>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li class="menuLiItems">
-                    <a href="#" class="hover:opacity-75 nav__link block">
+                    <a href="#" class="nav__link">
                       Resources
                       <svg class="inline w-5 h-5">
                         <use href="#icon-chevron-down"></use>
@@ -609,9 +563,7 @@
                     <div
                       class="w-full rounded h-0 overflow-hidden opacity-0 menuDropDown transition-opacity"
                     >
-                      <ul
-                        class="nav__submenu-list space-y-2 p-4 *:hover:opacity-75"
-                      >
+                      <ul class="nav__submenu-list space-y-2 p-4">
                         <li class="nav__submenu-item">
                           <a href="" class="nav__submenu-link">
                             Publications
@@ -634,7 +586,7 @@
                     </div>
                   </li>
                   <li class="menuLiItems">
-                    <a href="#" class="hover:opacity-75 nav__link block">
+                    <a href="#" class="nav__link">
                       Join Us
                       <svg class="inline w-5 h-5">
                         <use href="#icon-chevron-down"></use>
@@ -643,9 +595,7 @@
                     <div
                       class="w-full rounded h-0 overflow-hidden opacity-0 menuDropDown transition-opacity"
                     >
-                      <ul
-                        class="nav__submenu-list space-y-2 p-4 *:hover:opacity-75"
-                      >
+                      <ul class="nav__submenu-list space-y-2 p-4">
                         <li class="nav__submenu-item">
                           <a href="" class="nav__submenu-link">
                             How to Join Phraconrep
@@ -676,85 +626,51 @@
         </div>
       </section>
     </header>
-    <main class="md:px-4 py-16 otherTextSize">
-      <section class="container space-y-4">
-        <h1 class="h1TitlesTextSize">Training Schools</h1>
-        <div class="space-y-4">
-          <p>
-            COST Actions also facilitate knowledge sharing and collaborative
-            efforts through the organization of training schools. These schools
-            provide focused training, lasting up to 15 days, on specific topics
-            related to the Action. Hosted on the site of one of the Action’s
-            participants, these training sessions are primarily aimed at young
-            researchers from all over Europe, though they are not limited to
-            this group exclusively. Additionally, these training schools can
-            offer retraining opportunities, aligning with the concept of
-            lifelong learning.
-          </p>
-          <p>
-            As a COST Innovators Grant (CIG) tool, Training School (TS) is for
-            Early Stage Researchers, especially PhD students and post-doctoral
-            students, to provide them with high-quality training in line with
-            the aims and targets of the COST Action that the applicant is a
-            member of. For details, please read COST Annotated Rules:
-            https://www.cost.eu/funding/how-to-get-funding/documents-guidelines
-          </p>
-        </div>
-      </section>
-      <section class="container space-y-4">
-        <h2 class="titlesTextSize">Training School</h2>
-        <div>
-          <p>
-            <strong>Title:</strong> Corpus and AI-based research of Phraseme
-            Constructions
-          </p>
-          <p>
-            <strong>Venue:</strong> University of Zagreb (Croatia), Faculty of
-            Humanities and Social Sciences
-          </p>
-          <p><strong>Date:</strong> April, 14 – 16, 2025</p>
-          <p>
-            <strong>Details:</strong>
-            <a
-              href="https://www.phraconrep.com/wp-content/uploads/2025/03/Corpus-and-AI-based-research-of-PhraCons_Program_17_03.pdf"
-              >Click to download the program</a
-            >
-          </p>
-        </div>
-      </section>
-      <section class="container space-y-4">
-        <h2 class="titlesTextSize">Training School for WG3</h2>
-        <div>
-          <p>
-            <strong>Title:</strong> Entry processing and translation in the
-            Github repository
-          </p>
-          <p>
-            <strong>Venue:</strong> Josip Juraj Strossmayer University in
-            Osijek, Croatia, Faculty of Humanities and Social Sciences,
-          </p>
-          <p><strong>Date:</strong> September 4 – 6, 2024</p>
-          <p>
-            <strong>Details:</strong>
-            <a
-              href="https://www.phraconrep.com/wp-content/uploads/2024/06/Program-PhraConRep-Training_1.-Rundschreiben.pdf"
-              >Click to download the program</a
-            >
-          </p>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <section
-        class="flex container gap-x-10 gap-y-2 justify-between items-center lg:flex-row flex-col mb-2"
-      >
-        <p>
-          All rights reserved <span id="copyWriteYear"></span> © PhraConRep
-          Network
+
+    <main class="md:px-4">
+      <section class="container space-y-8 max-w-[1200px]">
+        <h1 class="h1TitlesTextSize pt-16">Training Schools</h1>
+        <p class="text-lg text-justify text-gray-700">
+          COST Actions also facilitate knowledge sharing and collaborative efforts through the organization of training schools. These schools provide focused training, lasting up to 15 days, on specific topics related to the Action. Hosted on the site of one of the Action’s participants, these training sessions are primarily aimed at young researchers from all over Europe, though they are not limited to this group exclusively. Additionally, these training schools can offer retraining opportunities, aligning with the concept of lifelong learning.
         </p>
-        <p>phraconrepcostaction@gmail.com | CA22115</p>
+        <p class="text-justify text-gray-700">
+          As a COST Innovators Grant (CIG) tool, Training School (TS) is for Early Stage Researchers, especially PhD students and post-doctoral students, to provide them with high-quality training in line with the aims and targets of the COST Action that the applicant is a member of. For details, please read COST Annotated Rules: https://www.cost.eu/funding/how-to-get-funding/documents-guidelines
+        </p>
       </section>
-    </footer>
+
+      <section class="container space-y-3 max-w-[1200px] text-gray-700">
+        <h2 class="h1TitlesTextSize pt-9 py-3">Training Schools</h2>
+        <p class="text-lg text-justify">
+          <span class="font-semibold text-black">Title:</span> Corpus and AI-based research of Phraseme Constructions
+        </p>
+        <p class="text-lg text-justify">
+          <span class="font-semibold text-black">Venue:</span> University of Zagreb (Croatia), Faculty of Humanities and Social Sciences
+        </p>
+        <p class="text-lg text-justify">
+          <span class="font-semibold text-black">Date:</span> April, 14 – 16, 2025
+        </p>
+        <p class="text-lg text-justify">
+          <span class="font-semibold text-black">Details:</span> <a href=""> Click to download the program </a>
+        </p>
+      </section>
+      
+      <section class="container space-y-3 max-w-[1200px] text-gray-700">
+        <h2 class="h1TitlesTextSize pt-9 py-3">Training Schools for WG3</h2>
+        <p class="text-lg text-justify">
+          <span class="font-semibold text-black">Title:</span> Entry processing and translation in the Github repository
+        </p>
+        <p class="text-lg text-justify">
+          <span class="font-semibold text-black">Venue:</span> Josip Juraj Strossmayer University in Osijek, Croatia, Faculty of Humanities and Social Sciences
+        </p>
+        <p class="text-lg text-justify">
+          <span class="font-semibold text-black">Date:</span> September 4 – 6, 2024
+        </p>
+        <p class="text-lg text-justify">
+          <span class="font-semibold text-black">Details:</span> <a href=""> Click to download the program </a>
+        </p>
+      </section>
+
+    </main>
     <script src="../dist/scripts/main.js"></script>
   </body>
 </html>
