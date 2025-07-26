@@ -114,6 +114,7 @@
     @apply max-w-[1336px] mx-auto;
   }
 }
+
 body {
   background: rgb(245, 245, 245);
 }
