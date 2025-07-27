@@ -630,6 +630,9 @@
   .p-11 {
     padding: calc(var(--spacing) * 11);
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -641,6 +644,9 @@
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
+  }
+  .px-11 {
+    padding-inline: calc(var(--spacing) * 11);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
