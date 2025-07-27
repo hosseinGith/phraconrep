@@ -113,6 +113,9 @@
   .headerMaxWidth {
     @apply max-w-[1336px] mx-auto;
   }
+  .sectionTextType {
+    @apply shadow p-11 bg-white;
+  }
 }
 
 body {
