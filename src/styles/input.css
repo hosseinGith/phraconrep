@@ -73,6 +73,7 @@
   .otherTextSize {
     @apply text-[20px] text-justify;
   }
+  
   .linksStyle {
     @apply font-medium text-[var(--darkText)];
   }
