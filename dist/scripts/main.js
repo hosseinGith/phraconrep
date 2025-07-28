@@ -38,3 +38,28 @@ if (windowContainer) {
 if (copyWriteYear) {
     copyWriteYear.textContent = String(new Date().getFullYear());
 }
+  const searchBtn = document.querySelector('.searchBtn');
+  const modal = document.getElementById('searchModal');
+  const closeBtn = document.getElementById('closeSearchModal');
+
+  searchBtn?.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.classList.remove('hidden');
+  });
+
+  closeBtn?.addEventListener('click', () => {
+    modal.classList.add('hidden');
+  });
+
+  // بستن با زدن ESC یا کلیک بیرون از مودال
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      modal.classList.add('hidden');
+    }
+  });
+
+  modal?.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.add('hidden');
+    }
+  });
