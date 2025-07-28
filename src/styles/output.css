@@ -7,11 +7,14 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-yellow-300: oklch(90.5% 0.182 98.111);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-neutral-800: oklch(26.9% 0 0);
     --color-black: #000;
@@ -193,6 +196,9 @@
   }
 }
 @layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
   .visible {
     visibility: visible;
   }
@@ -207,6 +213,9 @@
   }
   .static {
     position: static;
+  }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
   }
   .top-0 {
     top: calc(var(--spacing) * 0);
@@ -246,6 +255,9 @@
   }
   .mx-auto {
     margin-inline: auto;
+  }
+  .my-3 {
+    margin-block: calc(var(--spacing) * 3);
   }
   .my-7 {
     margin-block: calc(var(--spacing) * 7);
@@ -327,8 +339,14 @@
   .h-\[150px\] {
     height: 150px;
   }
+  .h-\[242px\] {
+    height: 242px;
+  }
   .h-\[342px\] {
     height: 342px;
+  }
+  .h-\[۲42px\] {
+    height: ۲42px;
   }
   .h-full {
     height: 100%;
@@ -357,6 +375,12 @@
   .w-\[100\%\] {
     width: 100%;
   }
+  .w-\[150px\] {
+    width: 150px;
+  }
+  .w-\[200px\] {
+    width: 200px;
+  }
   .w-\[250px\] {
     width: 250px;
   }
@@ -380,6 +404,9 @@
   }
   .max-w-full {
     max-width: 100%;
+  }
+  .max-w-prose {
+    max-width: 65ch;
   }
   .flex-1 {
     flex: 1;
@@ -440,6 +467,9 @@
   }
   .justify-evenly {
     justify-content: space-evenly;
+  }
+  .justify-start {
+    justify-content: flex-start;
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
@@ -542,6 +572,18 @@
   .rounded-xs {
     border-radius: var(--radius-xs);
   }
+  .rounded-l-2xl {
+    border-top-left-radius: var(--radius-2xl);
+    border-bottom-left-radius: var(--radius-2xl);
+  }
+  .rounded-l-lg {
+    border-top-left-radius: var(--radius-lg);
+    border-bottom-left-radius: var(--radius-lg);
+  }
+  .rounded-l-md {
+    border-top-left-radius: var(--radius-md);
+    border-bottom-left-radius: var(--radius-md);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -569,8 +611,14 @@
   .bg-amber-300 {
     background-color: var(--color-amber-300);
   }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
+  }
   .bg-neutral-800 {
     background-color: var(--color-neutral-800);
+  }
+  .bg-red-600 {
+    background-color: var(--color-red-600);
   }
   .bg-transparent {
     background-color: transparent;
@@ -734,6 +782,10 @@
   .wrap-break-word {
     overflow-wrap: break-word;
   }
+  .hyphens-auto {
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
   .whitespace-nowrap {
     white-space: nowrap;
   }
@@ -746,9 +798,6 @@
   .text-\[\#FB6645\] {
     color: #FB6645;
   }
-  .text-\[--\] {
-    color: --;
-  }
   .text-\[var\(--secondaryColor\)\] {
     color: var(--secondaryColor);
   }
@@ -757,6 +806,9 @@
   }
   .text-blue-500 {
     color: var(--color-blue-500);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
   }
   .text-gray-700 {
     color: var(--color-gray-700);
@@ -935,6 +987,11 @@
   .md\:col-span-5 {
     @media (width >= 48rem) {
       grid-column: span 5 / span 5;
+    }
+  }
+  .md\:col-span-6 {
+    @media (width >= 48rem) {
+      grid-column: span 6 / span 6;
     }
   }
   .md\:col-span-7 {
