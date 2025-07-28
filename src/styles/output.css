@@ -399,11 +399,17 @@
   .w-\[200px\] {
     width: 200px;
   }
+  .w-\[222px\] {
+    width: 222px;
+  }
   .w-\[250px\] {
     width: 250px;
   }
   .w-\[280px\] {
     width: 280px;
+  }
+  .w-\[522px\] {
+    width: 522px;
   }
   .w-auto {
     width: auto;
