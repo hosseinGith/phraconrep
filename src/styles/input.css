@@ -124,7 +124,8 @@ body {
   background: rgb(245, 245, 245);
 }
 p{
-  text-align: justify
+  text-align: justify;
+  font-size: 18px;
 }
 button {
   @apply cursor-pointer;
