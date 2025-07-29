@@ -189,12 +189,13 @@
     </svg>
 
     <header class="relative">
+      <!-- Decore -->
       <div class="absolute top-0 right-0 z-[-1]">
         <img src="../public/images/Decore.svg" alt="" />
       </div>
-      <section class="bg-white shadow z-50">
+      <div class="shadow z-50 bg-white">
         <div class="px-4 py-6 headerMaxWidth">
-          <nav class="flex justify-between items-center">
+          <nav class="flex justify items-center">
             <div class="flex justify-between items-center w-full gap-4">
               <button
                 id="menuHeaderShow"
@@ -215,276 +216,277 @@
                   />
                 </svg>
               </button>
-              <div class="max-w-full w-[280px] flex justify-center">
-                <a
-                  href="/"
-                  class="inline-block nav__link font-semibold sm:ml-12 lg:ml-0"
+              <div class="flex items-center">
+                <div class="max-w-full flex justify-center">
+                  <a
+                    href="/"
+                    class="inline-block nav__link font-semibold sm:ml-12 lg:ml-0"
+                  >
+                    <img
+                      src="../public/images/PHRACONREP.png"
+                      alt=""
+                      class="w-[150px] lg:w-[180px]"
+                    />
+                  </a>
+                </div>
+                <ul
+                  class="lg:flex gap-3 w-full hidden justify-center xl:text-lg pl-2 *:opacity-85 *:hover:opacity-100 *:transition-opacity"
                 >
-                  <img
-                    src="../public/images/PHRACONREP.png"
-                    alt=""
-                    class="lg:w-full w-[250px] lg:h-full"
-                  />
-                </a>
+                  <li class="nav__item">
+                    <a href="./" class="nav__link">Home</a>
+                  </li>
+                  <li class="nav__item nav__item--has-submenu relative">
+                    <a href="about.html" class="nav__link group">
+                      About
+                      <svg
+                        class="nav__icon inline w-5 h-5 transform transition-transform duration-300 group-hover:rotate-180"
+                      >
+                        <use href="#icon-chevron-down"></use>
+                      </svg>
+                    </a>
+                    <div
+                      class="nav__submenu shadow border border-gray-200 p-2.5 rounded bg-white absolute top-7 left-0 w-max whitespace-nowrap"
+                    >
+                      <ul
+                        class="nav__submenu-list *:opacity-75 *:hover:opacity-100 *:transition-opacity"
+                      >
+                        <li class="nav__submenu-item">
+                          <a href="about.html" class="nav__submenu-link"
+                            >About Phraconrep</a
+                          >
+                        </li>
+                        <li class="nav__submenu-item">
+                          <a href="" class="nav__submenu-link">Deliverables</a>
+                        </li>
+                        <li class="nav__submenu-item">
+                          <a href="" class="nav__submenu-link"
+                            >Memorandum of Understanding (MoU)</a
+                          >
+                        </li>
+                        <li class="nav__submenu-item">
+                          <a href="" class="nav__submenu-link"
+                            >Impact & Achievements</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item nav__item--has-submenu relative">
+                    <a href="network.html" class="nav__link group"
+                      >Network
+                      <svg class="inline w-5 h-5">
+                        <use href="#icon-chevron-down"></use>
+                      </svg>
+                    </a>
+                    <div
+                      class="nav__submenu shadow border border-gray-200 p-2.5 rounded bg-white absolute top-7 left-0 w-max whitespace-nowrap"
+                    >
+                      <ul
+                        class="nav__submenu-list *:opacity-75 *:hover:opacity-100 *:transition-opacity flex flex-col justify-center gap-[2px]"
+                      >
+                        <li class="nav__submenu-item">
+                          <a href="" class="nav__submenu-link">All</a>
+                        </li>
+                        <li class="nav__submenu-item">
+                          <a href="" class="nav__submenu-link"
+                            >Leadership positions
+                          </a>
+                        </li>
+                        <li class="nav__submenu-item">
+                          <a href="" class="nav__submenu-link"
+                            >MC representatives</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item nav__item--has-submenu relative">
+                    <a href="#" class="nav__link group">
+                      Opportunities
+                      <svg class="inline w-5 h-5">
+                        <use href="#icon-chevron-down"></use>
+                      </svg>
+                    </a>
+                    <div
+                      class="nav__submenu shadow border border-gray-200 p-2.5 rounded bg-white absolute top-7 left-0 w-max whitespace-nowrap"
+                    >
+                      <ul
+                        class="nav__submenu-list *:opacity-75 *:hover:opacity-100 *:transition-opacity flex flex-col justify-center gap-[2px]"
+                      >
+                        <li class="nav__submenu-item">
+                          <a href="Stsm.html" class="nav__submenu-link">
+                            STSM (Short Term Scientific Missions)
+                          </a>
+                        </li>
+                        <li class="nav__submenu-item">
+                          <a
+                            href="virtual-mobility-network.html"
+                            class="nav__submenu-link"
+                          >
+                            Virtual Mobility Network
+                          </a>
+                        </li>
+                        <li class="nav__submenu-item hover:opacity-75">
+                          <a
+                            href=""
+                            class="nav__submenu-link opacity-75 hover:opacity-100 transition-opacity block"
+                          >
+                            Conference Grants
+                          </a>
+                          <ol
+                            class="pl-4 *:opacity-75 *:hover:opacity-100 *:transition-opacity"
+                          >
+                            <li>
+                              <a
+                                href="dissemination-conference-grants.html"
+                                class="block"
+                                >Dissemination Conference Grant</a
+                              >
+                            </li>
+                            <li>
+                              <a href="ITC-Conference.html" class="block"
+                                >ITC Conference Grant</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="young-researchers-and-innovators-(YRI)-conference-grants.html"
+                                class="block"
+                                >YRI Conference Grants</a
+                              >
+                            </li>
+                          </ol>
+                        </li>
+                        <li>
+                          <a href="#" class="block"
+                            >Reorganized for better user flow</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item nav__item--has-submenu relative">
+                    <a href="#" class="nav__link group">
+                      Activities & Events
+                      <svg class="inline w-5 h-5">
+                        <use href="#icon-chevron-down"></use>
+                      </svg>
+                    </a>
+                    <div
+                      class="nav__submenu shadow border border-gray-200 p-2.5 rounded bg-white absolute top-7 left-0 w-max whitespace-nowrap"
+                    >
+                      <ul
+                        class="nav__submenu-list *:opacity-75 *:hover:opacity-100 *:transition-opacity flex flex-col justify-center gap-[2px]"
+                      >
+                        <li class="nav__submenu-item">
+                          <a href="" class="nav__submenu-link">
+                            Upcoming Events
+                          </a>
+                        </li>
+                        <li class="nav__submenu-item">
+                          <a
+                            href="training-schools.html"
+                            class="nav__submenu-link"
+                          >
+                            Training Schools
+                          </a>
+                        </li>
+                        <li class="nav__submenu-item">
+                          <a
+                            href="network-meeting.html"
+                            class="nav__submenu-link"
+                          >
+                            Network Meetings
+                          </a>
+                        </li>
+                        <li class="nav__submenu-item">
+                          <a
+                            href="Workshops-&-conferences.html"
+                            class="nav__submenu-link"
+                          >
+                            Conferences & Workshops
+                          </a>
+                        </li>
+                        <li class="nav__submenu-item">
+                          <a
+                            href="news-&-events.html"
+                            class="nav__submenu-link"
+                          >
+                            Streamlined from original "News & Events"
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item nav__item--has-submenu relative">
+                    <a href="#" class="nav__link group">
+                      Resources
+                      <svg class="inline w-5 h-5">
+                        <use href="#icon-chevron-down"></use>
+                      </svg>
+                    </a>
+                    <div
+                      class="nav__submenu shadow border border-gray-200 p-2.5 rounded bg-white absolute top-7 left-0 w-max whitespace-nowrap"
+                    >
+                      <ul
+                        class="nav__submenu-list *:opacity-75 *:hover:opacity-100 *:transition-opacity flex flex-col justify-center gap-[2px]"
+                      >
+                        <li class="nav__submenu-item">
+                          <a
+                            href="News-&-Press-Releases.html"
+                            class="nav__submenu-link"
+                          >
+                            News & Press Releases
+                          </a>
+                        </li>
+                        <li class="nav__submenu-item">
+                          <a href="" class="nav__submenu-link">
+                            Centralized resource hub
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__item nav__item--has-submenu relative">
+                    <a href="#" class="nav__link group">
+                      Join Us
+                      <svg class="inline w-5 h-5">
+                        <use href="#icon-chevron-down"></use>
+                      </svg>
+                    </a>
+                    <div
+                      class="nav__submenu shadow border border-gray-200 p-2.5 rounded bg-white absolute top-7 left-0 w-max whitespace-nowrap"
+                    >
+                      <ul
+                        class="nav__submenu-list *:opacity-75 *:hover:opacity-100 *:transition-opacity flex flex-col justify-center gap-[2px]"
+                      >
+                        <li class="nav__submenu-item">
+                          <a href="" class="nav__submenu-link">
+                            How to Join Phraconrep
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <ul class="lg:flex gap-4 w-full hidden justify-center xl:text-lg">
-                <li class="nav__item">
-                  <a href="./" class="nav__link">Home</a>
-                </li>
-                <li class="nav__item nav__item--has-submenu relative">
-                  <a href="about.html" class="nav__link group">
-                    About
-                    <svg
-                      class="nav__icon inline w-5 h-5 transform transition-transform duration-300 group-hover:rotate-180"
-                    >
-                      <use href="#icon-chevron-down"></use>
-                    </svg>
-                  </a>
-                  <div
-                    class="nav__submenu shadow border border-gray-200 p-2.5 rounded bg-white absolute top-7 left-0 w-max whitespace-nowrap"
-                  >
-                    <ul class="nav__submenu-list">
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link"
-                          >About Phraconrep</a
-                        >
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link">Deliverables</a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link"
-                          >Memorandum of Understanding (MoU)</a
-                        >
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link"
-                          >Impact & Achievements</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-
-                <li class="nav__item nav__item--has-submenu relative">
-                  <a href="network.html" class="nav__link group"
-                    >Network
-                    <svg class="inline w-5 h-5">
-                      <use href="#icon-chevron-down"></use>
-                    </svg>
-                  </a>
-                  <div
-                    class="nav__submenu shadow border border-gray-200 p-2.5 rounded bg-white absolute top-7 left-0 w-max whitespace-nowrap"
-                  >
-                    <ul
-                      class="nav__submenu-list flex flex-col justify-center gap-[2px]"
-                    >
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link">All</a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link"
-                          >Leadership positions
-                        </a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link"
-                          >MC representatives</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="nav__item nav__item--has-submenu relative">
-                  <a href="#" class="nav__link group">
-                    Opportunities
-                    <svg class="inline w-5 h-5">
-                      <use href="#icon-chevron-down"></use>
-                    </svg>
-                  </a>
-                  <div
-                    class="nav__submenu shadow border border-gray-200 p-2.5 rounded bg-white absolute top-7 left-0 w-max whitespace-nowrap"
-                  >
-                    <ul
-                      class="nav__submenu-list flex flex-col justify-center gap-[2px]"
-                    >
-                      <li class="nav__submenu-item">
-                        <a href="Stsm.html" class="nav__submenu-link">
-                          STSM (Short Term Scientific Missions)
-                        </a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a
-                          href="virtual-mobility-network.html"
-                          class="nav__submenu-link"
-                        >
-                          Virtual Mobility Network
-                        </a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link">
-                          Conference Grants
-                        </a>
-                        <ol class="pl-4">
-                          <li>
-                            <a
-                              href="dissemination-conference-grants.html"
-                              class="block"
-                              >Dissemination Conference Grant</a
-                            >
-                          </li>
-                          <li>
-                            <a href="ITC-Conference.html" class="block"
-                              >ITC Conference Grant</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#" class="block">YRI Conference Grants</a>
-                          </li>
-                        </ol>
-                      </li>
-                      <li>
-                        <a href="#" class="block"
-                          >Reorganized for better user flow</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="nav__item nav__item--has-submenu relative">
-                  <a href="#" class="nav__link group">
-                    Activities & Events
-                    <svg class="inline w-5 h-5">
-                      <use href="#icon-chevron-down"></use>
-                    </svg>
-                  </a>
-                  <div
-                    class="nav__submenu shadow border border-gray-200 p-2.5 rounded bg-white absolute top-7 left-0 w-max whitespace-nowrap"
-                  >
-                    <ul
-                      class="nav__submenu-list flex flex-col justify-center gap-[2px]"
-                    >
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link">
-                          Upcoming Events
-                        </a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a
-                          href="training-schools.html"
-                          class="nav__submenu-link"
-                        >
-                          Training Schools
-                        </a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link">
-                          Network Meetings
-                        </a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="conferences.html" class="nav__submenu-link">
-                          Conferences & Workshops
-                        </a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link"> News & Events </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="nav__item nav__item--has-submenu relative">
-                  <a href="#" class="nav__link group">
-                    Resources
-                    <svg class="inline w-5 h-5">
-                      <use href="#icon-chevron-down"></use>
-                    </svg>
-                  </a>
-                  <div
-                    class="nav__submenu shadow border border-gray-200 p-2.5 rounded bg-white absolute top-7 left-0 w-max whitespace-nowrap"
-                  >
-                    <ul
-                      class="nav__submenu-list flex flex-col justify-center gap-[2px]"
-                    >
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link"> Publications </a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="News-&-Press-Releases.html" class="nav__submenu-link">
-                          News & Press Releases
-                        </a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link"> FAQ </a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link">
-                          Centralized resource hub
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="nav__item nav__item--has-submenu relative">
-                  <a href="#" class="nav__link group">
-                    Join Us
-                    <svg class="inline w-5 h-5">
-                      <use href="#icon-chevron-down"></use>
-                    </svg>
-                  </a>
-                  <div
-                    class="nav__submenu shadow border border-gray-200 p-2.5 rounded bg-white absolute top-7 left-0 w-max whitespace-nowrap"
-                  >
-                    <ul
-                      class="nav__submenu-list flex flex-col justify-center gap-[2px]"
-                    >
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link">
-                          How to Join Phraconrep
-                        </a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link">
-                          Benefits of Membership
-                        </a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link">
-                          Application Process
-                        </a>
-                      </li>
-                      <li class="nav__submenu-item">
-                        <a href="" class="nav__submenu-link">
-                          Contact Information
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-              <form action="" id="">
-                <search class="bg-white shadow-gray-400 shadow-sm flex h-full">
-                  <input
-                    type="search"
-                    placeholder="Search"
-                    name="search"
-                    id="search"
-                    class="w-full px-4 py-2"
-                  />
-                  <button class="p-2">
-                    <svg class="size-6">
-                      <use href="#searchIcon"></use>
-                    </svg>
-                  </button>
-                </search>
-              </form>
+              <div
+                class="searchBtn bg-white flex h-full rounded-full p-1 border border-gray-300 shadow"
+              >
+                <button class="p-2">
+                  <svg class="size-6">
+                    <use href="#searchIcon"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </nav>
+
           <div id="menuContainer" class="window transition">
             <div class="max-w-[300px] h-full w-full menuBg px-4 overflow-auto">
-              <div class="flex justify-end">
+              <div class="flex justify-end mt-7">
                 <button
-                  class="p-4 hover:opacity-75 transition-opacity"
+                  class="hover:opacity-75 hover:bg-black hover:text-white transition-opacity border border-gray-300 p-2 rounded-full"
                   id="closeMenuContainer"
                 >
                   <svg class="size-8">
@@ -621,7 +623,9 @@
                               >
                             </li>
                             <li>
-                              <a href="#" class="block"
+                              <a
+                                href="young-researchers-and-innovators-(YRI)-conference-grants.html"
+                                class="block"
                                 >YRI Conference Grants</a
                               >
                             </li>
@@ -662,18 +666,27 @@
                           </a>
                         </li>
                         <li class="nav__submenu-item">
-                          <a href="" class="nav__submenu-link">
+                          <a
+                            href="network-meeting.html"
+                            class="nav__submenu-link"
+                          >
                             Network Meetings
                           </a>
                         </li>
                         <li class="nav__submenu-item">
-                          <a href="" class="nav__submenu-link">
+                          <a
+                            href="Workshops-&-conferences.html"
+                            class="nav__submenu-link"
+                          >
                             Conferences & Workshops
                           </a>
                         </li>
                         <li class="nav__submenu-item">
-                          <a href="" class="nav__submenu-link">
-                            News & Events
+                          <a
+                            href="news-&-events.html"
+                            class="nav__submenu-link"
+                          >
+                            Streamlined from original "News & Events"
                           </a>
                         </li>
                       </ul>
@@ -693,17 +706,12 @@
                         class="nav__submenu-list space-y-2 p-4 *:hover:opacity-75"
                       >
                         <li class="nav__submenu-item">
-                          <a href="" class="nav__submenu-link">
-                            Publications
-                          </a>
-                        </li>
-                        <li class="nav__submenu-item">
-                          <a href="News & Press Releases" class="nav__submenu-link">
+                          <a
+                            href="News-&-Press-Releases.html"
+                            class="nav__submenu-link"
+                          >
                             News & Press Releases
                           </a>
-                        </li>
-                        <li class="nav__submenu-item">
-                          <a href="" class="nav__submenu-link"> FAQ </a>
                         </li>
                         <li class="nav__submenu-item">
                           <a href="" class="nav__submenu-link">
@@ -739,8 +747,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </header>
+
 
     
     <main class="my-7">
